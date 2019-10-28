@@ -1,0 +1,3981 @@
+[
+  {
+    "name": "Java 基础",
+    "words": [
+      {
+        "chinese": " 公有的",
+        "english": "public"
+      },
+      {
+        "chinese": " 私有的",
+        "english": "private"
+      },
+      {
+        "chinese": " 保护的",
+        "english": "protected"
+      },
+      {
+        "chinese": " 类, 类型",
+        "english": "class"
+      },
+      {
+        "chinese": " 空白, 无返回值",
+        "english": "void"
+      },
+      {
+        "chinese": " 静态的",
+        "english": "static"
+      },
+      {
+        "chinese": " 最终的",
+        "english": "final"
+      },
+      {
+        "chinese": " 字符串",
+        "english": "String"
+      },
+      {
+        "chinese": " 整数类型",
+        "english": "int"
+      },
+      {
+        "chinese": " 长整型",
+        "english": "long"
+      },
+      {
+        "chinese": " 双倍, 双精度浮点数",
+        "english": "double"
+      },
+      {
+        "chinese": " 浮动, 浮点数",
+        "english": "float"
+      },
+      {
+        "chinese": " 布尔类型",
+        "english": "boolean"
+      },
+      {
+        "chinese": " 字节",
+        "english": "byte"
+      },
+      {
+        "chinese": " 位",
+        "english": "bit"
+      },
+      {
+        "chinese": " 二进制",
+        "english": "Binnary"
+      },
+      {
+        "chinese": " 短的, 16位整数",
+        "english": "short"
+      },
+      {
+        "chinese": " 字符, 字符类型",
+        "english": "char"
+      },
+      {
+        "chinese": " 姓名",
+        "english": "name"
+      },
+      {
+        "chinese": " 电话",
+        "english": "phone"
+      },
+      {
+        "chinese": " 电子邮件",
+        "english": "email"
+      },
+      {
+        "chinese": " windows操作系统",
+        "english": "windows"
+      },
+      {
+        "chinese": " linux操作系统",
+        "english": "linux"
+      },
+      {
+        "chinese": " 清空",
+        "english": "clear"
+      },
+      {
+        "chinese": " java虚拟机",
+        "english": "JVM"
+      },
+      {
+        "chinese": " java运行环境",
+        "english": "JRE"
+      },
+      {
+        "chinese": " java开发工具包",
+        "english": "JDK"
+      },
+      {
+        "chinese": " 集成开发环境",
+        "english": "IDE"
+      },
+      {
+        "chinese": " 日食",
+        "english": "eclipse"
+      },
+      {
+        "chinese": " java的家",
+        "english": "JAVA_HOME"
+      },
+      {
+        "chinese": " 路径",
+        "english": "path"
+      },
+      {
+        "chinese": " 类路径",
+        "english": "CLASSPATH"
+      },
+      {
+        "chinese": " 包",
+        "english": "package"
+      },
+      {
+        "chinese": " 类，类型",
+        "english": "class"
+      },
+      {
+        "chinese": " 主要的",
+        "english": "main"
+      },
+      {
+        "chinese": " 系统",
+        "english": "System"
+      },
+      {
+        "chinese": " 出",
+        "english": "out"
+      },
+      {
+        "chinese": " 打印",
+        "english": "print"
+      },
+      {
+        "chinese": " 打印并换行",
+        "english": "println"
+      },
+      {
+        "chinese": " 可变的",
+        "english": "variable"
+      },
+      {
+        "chinese": " 字节",
+        "english": "byte"
+      },
+      {
+        "chinese": " 短的，16位整型",
+        "english": "short"
+      },
+      {
+        "chinese": " 整型",
+        "english": "int"
+      },
+      {
+        "chinese": " 长整型",
+        "english": "long"
+      },
+      {
+        "chinese": " 浮动, 浮点数",
+        "english": "float"
+      },
+      {
+        "chinese": " 双倍, 双精度浮点数",
+        "english": "double"
+      },
+      {
+        "chinese": " 布尔类型",
+        "english": "boolean"
+      },
+      {
+        "chinese": " 字符，字符类型",
+        "english": "char"
+      },
+      {
+        "chinese": " 字符串",
+        "english": "String"
+      },
+      {
+        "chinese": " 位",
+        "english": "bit"
+      },
+      {
+        "chinese": " 二进制",
+        "english": "Binnary"
+      },
+      {
+        "chinese": " 真",
+        "english": "true"
+      },
+      {
+        "chinese": " 假",
+        "english": "false"
+      },
+      {
+        "chinese": " 年龄",
+        "english": "age"
+      },
+      {
+        "chinese": " 性别",
+        "english": "sex"
+      },
+      {
+        "chinese": "  地址",
+        "english": "address"
+      },
+      {
+        "chinese": " 工资",
+        "english": "salary"
+      },
+      {
+        "chinese": " 成绩",
+        "english": "score"
+      },
+      {
+        "chinese": " 老师姓名",
+        "english": "studentName"
+      },
+      {
+        "chinese": " 英语老师姓名",
+        "english": "englishTeacherName"
+      },
+      {
+        "chinese": " java成绩",
+        "english": "javaScore"
+      },
+      {
+        "chinese": " 卡号",
+        "english": "cardId"
+      },
+      {
+        "chinese": " 卡密码",
+        "english": "cardPwd"
+      },
+      {
+        "chinese": " 爱",
+        "english": "love"
+      },
+      {
+        "chinese": " 你",
+        "english": "you"
+      },
+      {
+        "chinese": " 引入、导入",
+        "english": "import"
+      },
+      {
+        "chinese": " 扫描器",
+        "english": "scanner"
+      },
+      {
+        "chinese": " 日",
+        "english": "day"
+      },
+      {
+        "chinese": " 月",
+        "english": "month"
+      },
+      {
+        "chinese": " 年",
+        "english": "year"
+      },
+      {
+        "chinese": " 如果",
+        "english": "if"
+      },
+      {
+        "chinese": " 否则",
+        "english": "else"
+      },
+      {
+        "chinese": " 开关",
+        "english": "switch"
+      },
+      {
+        "chinese": " 实例、情况",
+        "english": "case"
+      },
+      {
+        "chinese": " 间断、打破",
+        "english": "break"
+      },
+      {
+        "chinese": " 继续",
+        "english": "continue"
+      },
+      {
+        "chinese": " 大",
+        "english": "max"
+      },
+      {
+        "chinese": " 小",
+        "english": "min"
+      },
+      {
+        "chinese": " 数量",
+        "english": "count"
+      },
+      {
+        "chinese": " 数字",
+        "english": "num"
+      },
+      {
+        "chinese": " 当...的时候",
+        "english": "while"
+      },
+      {
+        "chinese": " 做",
+        "english": "do"
+      },
+      {
+        "chinese": " 为了、循环方式",
+        "english": "for"
+      },
+      {
+        "chinese": " 猜",
+        "english": "guess"
+      },
+      {
+        "chinese": " 和",
+        "english": "sum"
+      },
+      {
+        "chinese": " 队列、数组",
+        "english": "array"
+      },
+      {
+        "chinese": " 长度",
+        "english": "length"
+      },
+      {
+        "chinese": " 数学",
+        "english": "Math"
+      },
+      {
+        "chinese": " 随机的",
+        "english": "random"
+      },
+      {
+        "chinese": " 数组复制",
+        "english": "arraycopy"
+      },
+      {
+        "chinese": " 数组s",
+        "english": "Arrays"
+      },
+      {
+        "chinese": " 复制",
+        "english": "copyOf"
+      },
+      {
+        "chinese": " 排序",
+        "english": "sort"
+      },
+      {
+        "chinese": " 平方根",
+        "english": "sqrt"
+      },
+      {
+        "chinese": " 旗帜",
+        "english": "flag"
+      },
+      {
+        "chinese": " 说",
+        "english": "say"
+      },
+      {
+        "chinese": " 问好",
+        "english": "sayHi"
+      },
+      {
+        "chinese": " 加",
+        "english": "plus"
+      },
+      {
+        "chinese": " 公有的",
+        "english": "public"
+      },
+      {
+        "chinese": " 私有的",
+        "english": "private"
+      },
+      {
+        "chinese": " 保护的",
+        "english": "protected"
+      },
+      {
+        "chinese": " 静态的",
+        "english": "static"
+      },
+      {
+        "chinese": " 空白, 无返回值",
+        "english": "void"
+      },
+      {
+        "chinese": " 返回",
+        "english": "return"
+      },
+      {
+        "chinese": " 工作空间",
+        "english": "workspace"
+      },
+      {
+        "chinese": " 家",
+        "english": "home"
+      },
+      {
+        "chinese": " 操作系统",
+        "english": "OS"
+      },
+      {
+        "chinese": " 外形、轮廓",
+        "english": "profile"
+      },
+      {
+        "chinese": " 集成",
+        "english": "Integrate"
+      },
+      {
+        "chinese": " 开发",
+        "english": "Development"
+      },
+      {
+        "chinese": " 环境",
+        "english": "Environment"
+      },
+      {
+        "chinese": " 直接量",
+        "english": "literal"
+      },
+      {
+        "chinese": " 距离",
+        "english": "distance"
+      },
+      {
+        "chinese": " 当时时间毫秒数",
+        "english": "currentTimeMillis"
+      },
+      {
+        "chinese": " 金钱",
+        "english": "money"
+      },
+      {
+        "chinese": " 价格",
+        "english": "price"
+      },
+      {
+        "chinese": " 总价格",
+        "english": "totalPrice"
+      },
+      {
+        "chinese": " 改变、变化",
+        "english": "change"
+      },
+      {
+        "chinese": " 统一码",
+        "english": "Unicode"
+      },
+      {
+        "chinese": " ascii码表",
+        "english": "ASCII"
+      },
+      {
+        "chinese": " 孩子",
+        "english": "child"
+      },
+      {
+        "chinese": " 运行",
+        "english": "run"
+      },
+      {
+        "chinese": " 关闭",
+        "english": "close"
+      },
+      {
+        "chinese": " 百分比、百分数",
+        "english": "percent"
+      },
+      {
+        "chinese": " 大小",
+        "english": "size"
+      },
+      {
+        "chinese": " 余额",
+        "english": "balance"
+      },
+      {
+        "chinese": " 宽",
+        "english": "width"
+      },
+      {
+        "chinese": " 高",
+        "english": "height"
+      },
+      {
+        "chinese": " 索引",
+        "english": "index"
+      },
+      {
+        "chinese": " 闰年",
+        "english": "LeapYear"
+      },
+      {
+        "chinese": " 控制台",
+        "english": "console"
+      },
+      {
+        "chinese": " 单价",
+        "english": "unitPrice"
+      },
+      {
+        "chinese": " 数量",
+        "english": "amount"
+      },
+      {
+        "chinese": " 命令",
+        "english": "command"
+      },
+      {
+        "chinese": " 结果",
+        "english": "result"
+      },
+      {
+        "chinese": " 答案",
+        "english": "answer"
+      },
+      {
+        "chinese": " 总的",
+        "english": "total"
+      },
+      {
+        "chinese": " 输入的密码",
+        "english": "inputPwd"
+      },
+      {
+        "chinese": " 临时的",
+        "english": "temp"
+      },
+      {
+        "chinese": " 源",
+        "english": "src"
+      },
+      {
+        "chinese": " 源位置",
+        "english": "srcPos"
+      },
+      {
+        "chinese": " 目标",
+        "english": "dest"
+      },
+      {
+        "chinese": " 目标位置",
+        "english": "destPos"
+      },
+      {
+        "chinese": " 原始的",
+        "english": "original"
+      },
+      {
+        "chinese": " 新长度",
+        "english": "newLength"
+      },
+      {
+        "chinese": " 冒泡",
+        "english": "bubble"
+      },
+      {
+        "chinese": " 游戏",
+        "english": "game"
+      },
+      {
+        "chinese": " 数量",
+        "english": "count"
+      },
+      {
+        "chinese": " 输入",
+        "english": "input"
+      },
+      {
+        "chinese": " 生成",
+        "english": "generate"
+      },
+      {
+        "chinese": " 下一个",
+        "english": "next"
+      },
+      {
+        "chinese": " 整理、整齐",
+        "english": "trim"
+      },
+      {
+        "chinese": " 大写字母",
+        "english": "UpperCase"
+      },
+      {
+        "chinese": " 相等的",
+        "english": "equals"
+      },
+      {
+        "chinese": " 转为char数组",
+        "english": "toCharArray"
+      },
+      {
+        "chinese": " 检查",
+        "english": "check"
+      },
+      {
+        "chinese": " 字母",
+        "english": "letter"
+      },
+      {
+        "chinese": " 出纳",
+        "english": "cashier"
+      },
+      {
+        "chinese": " 税",
+        "english": "tax"
+      },
+      {
+        "chinese": " 征收所得税",
+        "english": "taxIncome"
+      },
+      {
+        "chinese": " 九",
+        "english": "nine"
+      },
+      {
+        "chinese": " 重要的、基本的",
+        "english": "prime"
+      },
+      {
+        "chinese": " 级别",
+        "english": "level"
+      }
+    ],
+    "index": 1,
+    "comment": "# Java 基础阶段常用的基本关键字和常用单词"
+  },
+  {
+    "name": "Java 面向对象",
+    "words": [
+      {
+        "chinese": " 扩展, 继承",
+        "english": "extends"
+      },
+      {
+        "chinese": " 实现",
+        "english": "implements"
+      },
+      {
+        "chinese": " 对象, 物件",
+        "english": "Object"
+      },
+      {
+        "chinese": " 字段, 属性",
+        "english": "field"
+      },
+      {
+        "chinese": " 属性",
+        "english": "property"
+      },
+      {
+        "chinese": " 方法",
+        "english": "method"
+      },
+      {
+        "chinese": " 类",
+        "english": "class"
+      },
+      {
+        "chinese": " 性别",
+        "english": "gender"
+      },
+      {
+        "chinese": " 雇员",
+        "english": "Emp"
+      },
+      {
+        "chinese": " 公共的",
+        "english": "public"
+      },
+      {
+        "chinese": " 类",
+        "english": "class"
+      },
+      {
+        "chinese": " 空",
+        "english": "null"
+      },
+      {
+        "chinese": " 指针",
+        "english": "pointer"
+      },
+      {
+        "chinese": " 异常",
+        "english": "Exception"
+      },
+      {
+        "chinese": " 空指针异常",
+        "english": "NullPointerException"
+      },
+      {
+        "chinese": " 地址",
+        "english": "address"
+      },
+      {
+        "chinese": " 学习",
+        "english": "study"
+      },
+      {
+        "chinese": " 教课",
+        "english": "teach"
+      },
+      {
+        "chinese": " 吃",
+        "english": "eat"
+      },
+      {
+        "chinese": " 睡",
+        "english": "sleep"
+      },
+      {
+        "chinese": " 学生",
+        "english": "student"
+      },
+      {
+        "chinese": " 老师",
+        "english": "teacher"
+      },
+      {
+        "chinese": " 格、格子",
+        "english": "cell"
+      },
+      {
+        "chinese": " 行",
+        "english": "row"
+      },
+      {
+        "chinese": " 列",
+        "english": "col"
+      },
+      {
+        "chinese": " 列",
+        "english": "column"
+      },
+      {
+        "chinese": " 下落",
+        "english": "drop"
+      },
+      {
+        "chinese": " 移动",
+        "english": "move"
+      },
+      {
+        "chinese": " 左",
+        "english": "left"
+      },
+      {
+        "chinese": " 右",
+        "english": "right"
+      },
+      {
+        "chinese": " 得到、获取",
+        "english": "get"
+      },
+      {
+        "chinese": " 信息",
+        "english": "info"
+      },
+      {
+        "chinese": " 左移",
+        "english": "moveLeft"
+      },
+      {
+        "chinese": " 右移",
+        "english": "moveRight"
+      },
+      {
+        "chinese": " 得到格子的信息",
+        "english": "getCellInfo"
+      },
+      {
+        "chinese": " 打印、输出",
+        "english": "print"
+      },
+      {
+        "chinese": " 房间",
+        "english": "room"
+      },
+      {
+        "chinese": " 教室",
+        "english": "classroom"
+      },
+      {
+        "chinese": " 宽",
+        "english": "width"
+      },
+      {
+        "chinese": " 高",
+        "english": "height"
+      },
+      {
+        "chinese": " 图片",
+        "english": "image"
+      },
+      {
+        "chinese": " 移动",
+        "english": "move"
+      },
+      {
+        "chinese": " 发射",
+        "english": "shoot"
+      },
+      {
+        "chinese": " 课程",
+        "english": "course"
+      },
+      {
+        "chinese": " 支付",
+        "english": "pay"
+      },
+      {
+        "chinese": " 这个",
+        "english": "this"
+      },
+      {
+        "chinese": " 学习",
+        "english": "study"
+      },
+      {
+        "chinese": " 教课",
+        "english": "teach"
+      },
+      {
+        "chinese": " 切",
+        "english": "cut"
+      },
+      {
+        "chinese": " 吃饭",
+        "english": "eat"
+      },
+      {
+        "chinese": " 睡觉",
+        "english": "sleep"
+      },
+      {
+        "chinese": " 四格拼板",
+        "english": "tetromino"
+      },
+      {
+        "chinese": " 扩展, 继承",
+        "english": "extends"
+      },
+      {
+        "chinese": " 实现",
+        "english": "implements"
+      },
+      {
+        "chinese": " 对象, 物件",
+        "english": "Object"
+      },
+      {
+        "chinese": " 字段, 属性",
+        "english": "field"
+      },
+      {
+        "chinese": " 属性",
+        "english": "property"
+      },
+      {
+        "chinese": " 方法",
+        "english": "method"
+      },
+      {
+        "chinese": " 类",
+        "english": "class"
+      },
+      {
+        "chinese": " 动物",
+        "english": "animal"
+      },
+      {
+        "chinese": " 老虎",
+        "english": "tiger"
+      },
+      {
+        "chinese": " 人",
+        "english": "person"
+      },
+      {
+        "chinese": " 创建",
+        "english": "create"
+      },
+      {
+        "chinese": " 苹果",
+        "english": "apple"
+      },
+      {
+        "chinese": " 香蕉",
+        "english": "banana"
+      },
+      {
+        "chinese": " 超级",
+        "english": "super"
+      },
+      {
+        "chinese": " 新的、新建",
+        "english": "new"
+      },
+      {
+        "chinese": " 重写",
+        "english": "override"
+      },
+      {
+        "chinese": " 重载",
+        "english": "overload"
+      },
+      {
+        "chinese": " 案例",
+        "english": "case"
+      },
+      {
+        "chinese": " 显示",
+        "english": "show"
+      },
+      {
+        "chinese": " 测试",
+        "english": "test"
+      },
+      {
+        "chinese": " 包",
+        "english": "package"
+      },
+      {
+        "chinese": " 引入、导入",
+        "english": "import"
+      },
+      {
+        "chinese": " 公共的",
+        "english": "public"
+      },
+      {
+        "chinese": " 私有的",
+        "english": "private"
+      },
+      {
+        "chinese": " 受保护的",
+        "english": "protected"
+      },
+      {
+        "chinese": " 静态的",
+        "english": "static"
+      },
+      {
+        "chinese": " 最终的",
+        "english": "final"
+      },
+      {
+        "chinese": " 密码",
+        "english": "password"
+      },
+      {
+        "chinese": " 顾客、帐户",
+        "english": "customer"
+      },
+      {
+        "chinese": " 帐户姓名",
+        "english": "customerName"
+      },
+      {
+        "chinese": " 帐户密码",
+        "english": "customerPwd"
+      },
+      {
+        "chinese": " 图形",
+        "english": "Shape"
+      },
+      {
+        "chinese": " 面积",
+        "english": "area"
+      },
+      {
+        "chinese": " 圆形",
+        "english": "Circle"
+      },
+      {
+        "chinese": " 方形",
+        "english": "Square"
+      },
+      {
+        "chinese": " 最大面积",
+        "english": "maxArea"
+      },
+      {
+        "chinese": " 银联",
+        "english": "unionPay"
+      },
+      {
+        "chinese": " 中国工商银行",
+        "english": "ICBC"
+      },
+      {
+        "chinese": " 中国农业银行",
+        "english": "ABC"
+      },
+      {
+        "chinese": " 中国建设银行",
+        "english": "CCB"
+      },
+      {
+        "chinese": " 实例、例子",
+        "english": "instance"
+      },
+      {
+        "chinese": " 框架",
+        "english": "frame"
+      },
+      {
+        "chinese": " 设置大小",
+        "english": "setSize"
+      },
+      {
+        "chinese": " 输出信息",
+        "english": "printInfo"
+      },
+      {
+        "chinese": " 打印格子",
+        "english": "printCell"
+      },
+      {
+        "chinese": " 总行数",
+        "english": "totalRow"
+      },
+      {
+        "chinese": " 总列数",
+        "english": "totalCol"
+      },
+      {
+        "chinese": " 返回",
+        "english": "return"
+      },
+      {
+        "chinese": " 出纳",
+        "english": "cashier"
+      },
+      {
+        "chinese": " 支付",
+        "english": "pay"
+      },
+      {
+        "chinese": " 现金支付",
+        "english": "payByCash"
+      },
+      {
+        "chinese": " 卡支付",
+        "english": "payByCard"
+      },
+      {
+        "chinese": " 支票支付",
+        "english": "payByCheck"
+      },
+      {
+        "chinese": " 公司名称",
+        "english": "companyName"
+      },
+      {
+        "chinese": " 获取格子信息",
+        "english": "getCellInfo"
+      },
+      {
+        "chinese": " 垃圾回收器",
+        "english": "GC"
+      },
+      {
+        "chinese": " 垃圾",
+        "english": "garbage"
+      },
+      {
+        "chinese": " 集合",
+        "english": "collection"
+      },
+      {
+        "chinese": " 四格拼板",
+        "english": "tetromino"
+      },
+      {
+        "chinese": " 值",
+        "english": "value"
+      },
+      {
+        "chinese": " 输出四格拼板",
+        "english": "printTetromino"
+      },
+      {
+        "chinese": " 哺乳动物",
+        "english": "mammal"
+      },
+      {
+        "chinese": " 鸟",
+        "english": "bird"
+      },
+      {
+        "chinese": " 颜色",
+        "english": "color"
+      },
+      {
+        "chinese": " 基础的",
+        "english": "base"
+      },
+      {
+        "chinese": " 点",
+        "english": "point"
+      },
+      {
+        "chinese": " 距离",
+        "english": "distance"
+      },
+      {
+        "chinese": " 猫",
+        "english": "cat"
+      },
+      {
+        "chinese": " 汽车",
+        "english": "car"
+      },
+      {
+        "chinese": " 坦克",
+        "english": "tank"
+      },
+      {
+        "chinese": " 驼鸟",
+        "english": "ostrich"
+      },
+      {
+        "chinese": " 飞",
+        "english": "fly"
+      },
+      {
+        "chinese": " 鸟",
+        "english": "bird"
+      },
+      {
+        "chinese": " 移动",
+        "english": "move"
+      },
+      {
+        "chinese": " 参数",
+        "english": "parameter"
+      },
+      {
+        "chinese": " 赛跑者",
+        "english": "runner"
+      },
+      {
+        "chinese": " 猎人",
+        "english": "hunter"
+      },
+      {
+        "chinese": " 速度",
+        "english": "speed"
+      },
+      {
+        "chinese": " 获取余额",
+        "english": "getBalance"
+      },
+      {
+        "chinese": " 取钱",
+        "english": "drawMoney"
+      },
+      {
+        "chinese": " 检查密码",
+        "english": "checkPwd"
+      },
+      {
+        "chinese": " 在线支付",
+        "english": "payOnline"
+      },
+      {
+        "chinese": " 支付电话费",
+        "english": "payTelBill"
+      },
+      {
+        "chinese": " 钱",
+        "english": "money"
+      },
+      {
+        "chinese": " 密码",
+        "english": "pwd"
+      },
+      {
+        "chinese": " 密码",
+        "english": "password"
+      },
+      {
+        "chinese": " 数字",
+        "english": "number"
+      },
+      {
+        "chinese": " 电话号码",
+        "english": "phoneNum"
+      },
+      {
+        "chinese": " 描述、分析",
+        "english": "parse"
+      },
+      {
+        "chinese": " 车辆",
+        "english": "vehicle"
+      },
+      {
+        "chinese": " 作者",
+        "english": "author"
+      },
+      {
+        "chinese": " 类型转换异常",
+        "english": "ClassCastException"
+      },
+      {
+        "chinese": " 外面的",
+        "english": "Outer"
+      },
+      {
+        "chinese": " 内部的",
+        "english": "Inner"
+      },
+      {
+        "chinese": " 时间",
+        "english": "time"
+      },
+      {
+        "chinese": " 执行",
+        "english": "execute"
+      },
+      {
+        "chinese": " 动作、行为",
+        "english": "action"
+      },
+      {
+        "chinese": " 插入",
+        "english": "insert"
+      },
+      {
+        "chinese": " 出",
+        "english": "out"
+      },
+      {
+        "chinese": " 菜单、列表",
+        "english": "menu"
+      },
+      {
+        "chinese": " 所有的",
+        "english": "all"
+      },
+      {
+        "chinese": " 练习",
+        "english": "exercise"
+      },
+      {
+        "chinese": " 对象",
+        "english": "Object"
+      },
+      {
+        "chinese": " 列表",
+        "english": "List"
+      },
+      {
+        "chinese": " 添加",
+        "english": "add"
+      },
+      {
+        "chinese": " 空",
+        "english": "null"
+      },
+      {
+        "chinese": " 六边形",
+        "english": "Hexagon"
+      },
+      {
+        "chinese": " 支付燃气费",
+        "english": "payGasBill"
+      },
+      {
+        "chinese": " 账单",
+        "english": "bill"
+      },
+      {
+        "chinese": " 射击、发射",
+        "english": "shoot"
+      },
+      {
+        "chinese": " 游戏",
+        "english": "game"
+      },
+      {
+        "chinese": " 射击游戏",
+        "english": "ShootGame"
+      },
+      {
+        "chinese": " 飞机",
+        "english": "airplane"
+      },
+      {
+        "chinese": " 速度",
+        "english": "speed"
+      },
+      {
+        "chinese": " 飞行物",
+        "english": "FlyingObject"
+      },
+      {
+        "chinese": " 敌人",
+        "english": "Enemy"
+      },
+      {
+        "chinese": " 获取分数",
+        "english": "getScore"
+      },
+      {
+        "chinese": " 移动、走步",
+        "english": "step"
+      },
+      {
+        "chinese": " 边界",
+        "english": "bounds"
+      },
+      {
+        "chinese": " 出界、越界",
+        "english": "outOfBounds"
+      },
+      {
+        "chinese": " 双倍火力",
+        "english": "DOUBLE_FIRE"
+      },
+      {
+        "chinese": " 命",
+        "english": "life"
+      },
+      {
+        "chinese": " 蜜蜂",
+        "english": "bee"
+      },
+      {
+        "chinese": " 获取类型",
+        "english": "getType"
+      },
+      {
+        "chinese": " 奖励",
+        "english": "award"
+      },
+      {
+        "chinese": " 奖励类型",
+        "english": "awardType"
+      },
+      {
+        "chinese": " 子弹",
+        "english": "bullet"
+      },
+      {
+        "chinese": " 图片",
+        "english": "image"
+      },
+      {
+        "chinese": " 射击",
+        "english": "shoot"
+      },
+      {
+        "chinese": " 被射击",
+        "english": "shootBy"
+      },
+      {
+        "chinese": " 英雄",
+        "english": "hero"
+      },
+      {
+        "chinese": " 加命",
+        "english": "addLife"
+      },
+      {
+        "chinese": " 减命",
+        "english": "subtractLife"
+      },
+      {
+        "chinese": " 移动到",
+        "english": "moveTo"
+      },
+      {
+        "chinese": " 其它的、另外的",
+        "english": "other"
+      },
+      {
+        "chinese": " 框架",
+        "english": "frame"
+      },
+      {
+        "chinese": " 面板",
+        "english": "panel"
+      },
+      {
+        "chinese": " 暂停",
+        "english": "pause"
+      },
+      {
+        "chinese": " 游戏结束",
+        "english": "gameover"
+      },
+      {
+        "chinese": " 开始",
+        "english": "start"
+      },
+      {
+        "chinese": " 正运行",
+        "english": "running"
+      },
+      {
+        "chinese": " 分数",
+        "english": "score"
+      },
+      {
+        "chinese": " 时间",
+        "english": "timer"
+      },
+      {
+        "chinese": " 间隔",
+        "english": "interval"
+      },
+      {
+        "chinese": " 缓冲的",
+        "english": "buffered"
+      },
+      {
+        "chinese": " 背景",
+        "english": "background"
+      },
+      {
+        "chinese": " 飞",
+        "english": "fly"
+      },
+      {
+        "chinese": " 输入输出",
+        "english": "IO"
+      },
+      {
+        "chinese": " 读",
+        "english": "read"
+      },
+      {
+        "chinese": " 资源",
+        "english": "resource"
+      },
+      {
+        "chinese": " 获取资源",
+        "english": "getResource"
+      },
+      {
+        "chinese": " 异常",
+        "english": "exception"
+      },
+      {
+        "chinese": " 尝试",
+        "english": "try"
+      },
+      {
+        "chinese": " 抓住、捕获",
+        "english": "catch"
+      },
+      {
+        "chinese": " 画",
+        "english": "paint"
+      },
+      {
+        "chinese": " 制图",
+        "english": "graphics"
+      },
+      {
+        "chinese": " 状态",
+        "english": "state"
+      },
+      {
+        "chinese": " 一直的、总是",
+        "english": "always"
+      },
+      {
+        "chinese": " 上方",
+        "english": "top"
+      },
+      {
+        "chinese": " 设置总在最上",
+        "english": "setAlwaysOnTop"
+      },
+      {
+        "chinese": " 默认的",
+        "english": "default"
+      },
+      {
+        "chinese": " 可见的、可视的",
+        "english": "visible"
+      },
+      {
+        "chinese": " 行动",
+        "english": "action"
+      },
+      {
+        "chinese": " 鼠标",
+        "english": "mouse"
+      },
+      {
+        "chinese": " 适配器",
+        "english": "adapter"
+      },
+      {
+        "chinese": " 鼠标进入",
+        "english": "mouseEntered"
+      },
+      {
+        "chinese": " 鼠标退出",
+        "english": "mouseExited"
+      },
+      {
+        "chinese": " 鼠标点击",
+        "english": "mouseClick"
+      },
+      {
+        "chinese": "  鼠标事件",
+        "english": "mouseEvent"
+      },
+      {
+        "chinese": " 关键, 按键",
+        "english": "key"
+      },
+      {
+        "chinese": " 侦听",
+        "english": "listener"
+      },
+      {
+        "chinese": " 运动、滑动",
+        "english": "motion"
+      },
+      {
+        "chinese": " 添加鼠标监听器",
+        "english": "addMouseListener"
+      },
+      {
+        "chinese": " 添加属性一点监听器",
+        "english": "addMouseMotionListener"
+      },
+      {
+        "chinese": " 时间计划",
+        "english": "schedule"
+      },
+      {
+        "chinese": " 间隔",
+        "english": "interval"
+      },
+      {
+        "chinese": " 下一个",
+        "english": "nextOne"
+      },
+      {
+        "chinese": " 飞行物入场计数",
+        "english": "flyEnteredIndex"
+      },
+      {
+        "chinese": " 射击计数",
+        "english": "shootIndex"
+      },
+      {
+        "chinese": " 碰撞",
+        "english": "bang"
+      }
+    ],
+    "index": 2,
+    "comment": "# 面向对象阶段应该会的单词"
+  },
+  {
+    "name": "Java SE 阶段",
+    "words": [
+      {
+        "chinese": " 字符串",
+        "english": "String"
+      },
+      {
+        "chinese": " 编码",
+        "english": "encode"
+      },
+      {
+        "chinese": " 统一码",
+        "english": "unicode"
+      },
+      {
+        "chinese": " 索引, 序号",
+        "english": "index"
+      },
+      {
+        "chinese": " 长度",
+        "english": "length"
+      },
+      {
+        "chinese": " 追加",
+        "english": "append"
+      },
+      {
+        "chinese": " 匹配",
+        "english": "match"
+      },
+      {
+        "chinese": " 插入",
+        "english": "insert"
+      },
+      {
+        "chinese": " 以...为结尾",
+        "english": "endsWidth"
+      },
+      {
+        "chinese": " 以...为开头",
+        "english": "startsWidth"
+      },
+      {
+        "chinese": " 大小",
+        "english": "size"
+      },
+      {
+        "chinese": " 相等",
+        "english": "equals"
+      },
+      {
+        "chinese": " 哈希, 散列",
+        "english": "hash"
+      },
+      {
+        "chinese": " 编码",
+        "english": "code"
+      },
+      {
+        "chinese": " 缓冲",
+        "english": "buffer"
+      },
+      {
+        "chinese": " 构建器",
+        "english": "builder"
+      },
+      {
+        "chinese": " 创建",
+        "english": "build"
+      },
+      {
+        "chinese": " 休眠",
+        "english": "sleep"
+      },
+      {
+        "chinese": " 阻塞",
+        "english": "block"
+      },
+      {
+        "chinese": " 队列",
+        "english": "Queue"
+      },
+      {
+        "chinese": " 栈",
+        "english": "Stack"
+      },
+      {
+        "chinese": " 添加",
+        "english": "add"
+      },
+      {
+        "chinese": " 删除",
+        "english": "remove"
+      },
+      {
+        "chinese": " 迭代器",
+        "english": "iterator"
+      },
+      {
+        "chinese": " 是否存在下一个元素",
+        "english": "hasNext"
+      },
+      {
+        "chinese": " 下一个",
+        "english": "next"
+      },
+      {
+        "chinese": " 删除",
+        "english": "delete"
+      },
+      {
+        "chinese": " 集合",
+        "english": "Collection"
+      },
+      {
+        "chinese": " 线性表",
+        "english": "List"
+      },
+      {
+        "chinese": " 链表形式线性表",
+        "english": "LinkedList"
+      },
+      {
+        "chinese": " 不可重复集",
+        "english": "Set"
+      },
+      {
+        "chinese": " hash算法不可重复集",
+        "english": "HashSet"
+      },
+      {
+        "chinese": " 查找表",
+        "english": "Map"
+      },
+      {
+        "chinese": " hash算法查找表",
+        "english": "HashMap"
+      },
+      {
+        "chinese": " 存入map",
+        "english": "put"
+      },
+      {
+        "chinese": " 键",
+        "english": "key"
+      },
+      {
+        "chinese": " 值",
+        "english": "value"
+      },
+      {
+        "chinese": " 键值对",
+        "english": "Entry"
+      },
+      {
+        "chinese": " 对象",
+        "english": "Object"
+      },
+      {
+        "chinese": " 哈希值",
+        "english": "hashCode"
+      },
+      {
+        "chinese": " 内容比较",
+        "english": "equals"
+      },
+      {
+        "chinese": " 等待",
+        "english": "wait"
+      },
+      {
+        "chinese": " 通知解除等待阻塞",
+        "english": "notify"
+      },
+      {
+        "chinese": " 中断",
+        "english": "interrupt"
+      },
+      {
+        "chinese": " 异常",
+        "english": "Exception"
+      },
+      {
+        "chinese": " 空指针异常",
+        "english": "NullPointerException"
+      },
+      {
+        "chinese": " 文件",
+        "english": "File"
+      },
+      {
+        "chinese": " 文件没有找到异常",
+        "english": "FileNotFoundException"
+      },
+      {
+        "chinese": " IO异常",
+        "english": "IOException"
+      },
+      {
+        "chinese": " 字符串下表越界",
+        "english": "StringIndexOutOfBoundsException"
+      },
+      {
+        "chinese": " 错误",
+        "english": "Error"
+      },
+      {
+        "chinese": " 可抛出的接口",
+        "english": "Throwable"
+      },
+      {
+        "chinese": " 文件过滤器",
+        "english": "FileFilter"
+      },
+      {
+        "chinese": " 输入流",
+        "english": "InputStream"
+      },
+      {
+        "chinese": " 输出流",
+        "english": "OutputStream"
+      },
+      {
+        "chinese": " 读取",
+        "english": "read"
+      },
+      {
+        "chinese": " 写出",
+        "english": "write"
+      },
+      {
+        "chinese": " 刷新缓存",
+        "english": "flush"
+      },
+      {
+        "chinese": " 字符输入流",
+        "english": "Reader"
+      },
+      {
+        "chinese": " 字符输出流",
+        "english": "Writer"
+      },
+      {
+        "chinese": " 线程",
+        "english": "Thread"
+      },
+      {
+        "chinese": " 可运行接口",
+        "english": "Runnable"
+      },
+      {
+        "chinese": " 执行者服务, 线程池",
+        "english": "ExecutorService"
+      },
+      {
+        "chinese": " 集合工具类",
+        "english": "Collections"
+      },
+      {
+        "chinese": " 排序",
+        "english": "sort"
+      },
+      {
+        "chinese": " 转换为List集合",
+        "english": "asList"
+      },
+      {
+        "chinese": " 转换为数组",
+        "english": "toArray"
+      },
+      {
+        "chinese": " 同步锁，互斥锁",
+        "english": "synchronized"
+      },
+      {
+        "chinese": " 套接字",
+        "english": "Socket"
+      },
+      {
+        "chinese": " 传输控制协议",
+        "english": "TCP"
+      },
+      {
+        "chinese": " 网际协议",
+        "english": "IP"
+      },
+      {
+        "chinese": " 面具, 掩码",
+        "english": "mask"
+      },
+      {
+        "chinese": " 网关",
+        "english": "gateway"
+      },
+      {
+        "chinese": " 服务端套接字",
+        "english": "ServerSocket"
+      },
+      {
+        "chinese": " 关闭",
+        "english": "close"
+      },
+      {
+        "chinese": " 电子邮件",
+        "english": "e-mail"
+      },
+      {
+        "chinese": " java语言包",
+        "english": "lang"
+      },
+      {
+        "chinese": " 工具包",
+        "english": "util"
+      },
+      {
+        "chinese": " 常用语读取控制台输入",
+        "english": "Scanner"
+      },
+      {
+        "chinese": " 数学类",
+        "english": "Math"
+      },
+      {
+        "chinese": " 随机数类",
+        "english": "Random"
+      },
+      {
+        "chinese": " 网络",
+        "english": "net"
+      },
+      {
+        "chinese": " 输入输出",
+        "english": "io"
+      },
+      {
+        "chinese": " 文档对象模型",
+        "english": "dom"
+      },
+      {
+        "chinese": " 可扩展标记语言",
+        "english": "XML"
+      },
+      {
+        "chinese": " 属性",
+        "english": "field"
+      },
+      {
+        "chinese": " 获取",
+        "english": "get"
+      },
+      {
+        "chinese": " 设置",
+        "english": "set"
+      },
+      {
+        "chinese": " 检索xml的语言",
+        "english": "XPath"
+      },
+      {
+        "chinese": " 运行时",
+        "english": "Runtime"
+      },
+      {
+        "chinese": " 运行时异常",
+        "english": "RuntimeException"
+      },
+      {
+        "chinese": " 类造型异常",
+        "english": "ClassCastException"
+      }
+    ],
+    "index": 3,
+    "comment": "# Java SE 阶段的API常用单词列表"
+  },
+  {
+    "name": "Oracle JDBC 阶段单词",
+    "words": [
+      {
+        "chinese": " 选择",
+        "english": "select"
+      },
+      {
+        "chinese": " 从...里",
+        "english": "from"
+      },
+      {
+        "chinese": " 哪里，在哪里",
+        "english": "where"
+      },
+      {
+        "chinese": " 插入",
+        "english": "insert"
+      },
+      {
+        "chinese": " 更新",
+        "english": "update"
+      },
+      {
+        "chinese": " 删除",
+        "english": "delete"
+      },
+      {
+        "chinese": " 进入",
+        "english": "into"
+      },
+      {
+        "chinese": " 员工",
+        "english": "employee"
+      },
+      {
+        "chinese": " 部门",
+        "english": "department"
+      },
+      {
+        "chinese": " 薪水",
+        "english": "salary"
+      },
+      {
+        "chinese": " 表格",
+        "english": "table"
+      },
+      {
+        "chinese": " 数据库",
+        "english": "database"
+      },
+      {
+        "chinese": " 管理",
+        "english": "management"
+      },
+      {
+        "chinese": " 关系的，关系型",
+        "english": "relational"
+      },
+      {
+        "chinese": " 行",
+        "english": "row"
+      },
+      {
+        "chinese": " 记录",
+        "english": "record"
+      },
+      {
+        "chinese": " 列",
+        "english": "column"
+      },
+      {
+        "chinese": " 字段",
+        "english": "field"
+      },
+      {
+        "chinese": " 查询",
+        "english": "query"
+      },
+      {
+        "chinese": " 定义",
+        "english": "definition"
+      },
+      {
+        "chinese": " 操作",
+        "english": "Manipulation"
+      },
+      {
+        "chinese": " 事务",
+        "english": "Transaction"
+      },
+      {
+        "chinese": " 单元",
+        "english": "unit"
+      },
+      {
+        "chinese": " 资源",
+        "english": "resource"
+      },
+      {
+        "chinese": " 连接",
+        "english": "connect"
+      },
+      {
+        "chinese": " 断开连接",
+        "english": "disconnected"
+      },
+      {
+        "chinese": " 默认",
+        "english": "default"
+      },
+      {
+        "chinese": " 唯一",
+        "english": "unique"
+      },
+      {
+        "chinese": " 约束",
+        "english": "constraint"
+      },
+      {
+        "chinese": " 参照，引用",
+        "english": "references"
+      },
+      {
+        "chinese": " 外部",
+        "english": "foreign"
+      },
+      {
+        "chinese": " 主要",
+        "english": "primary"
+      },
+      {
+        "chinese": " 修改",
+        "english": "modify"
+      },
+      {
+        "chinese": " 条件",
+        "english": "condition"
+      },
+      {
+        "chinese": " 截断，缩短",
+        "english": "truncate"
+      },
+      {
+        "chinese": " 提交",
+        "english": "commit"
+      },
+      {
+        "chinese": " 回滚",
+        "english": "rollback"
+      },
+      {
+        "chinese": " 清除",
+        "english": "purge"
+      },
+      {
+        "chinese": " 回收",
+        "english": "recycle"
+      },
+      {
+        "chinese": " 把...和...连接",
+        "english": "concat"
+      },
+      {
+        "chinese": " 填充",
+        "english": "pad"
+      },
+      {
+        "chinese": " 天花板，上取整",
+        "english": "ceil"
+      },
+      {
+        "chinese": " 地板，下取整",
+        "english": "floor"
+      },
+      {
+        "chinese": " 圆形，圆弧，四舍五入",
+        "english": "round"
+      },
+      {
+        "chinese": " 模数",
+        "english": "modulus"
+      },
+      {
+        "chinese": " 时间戳",
+        "english": "timestamp"
+      },
+      {
+        "chinese": " 最小的，最少的",
+        "english": "least"
+      },
+      {
+        "chinese": " 最大的，最多的",
+        "english": "greatest"
+      },
+      {
+        "chinese": " 提取",
+        "english": "extract"
+      },
+      {
+        "chinese": " 平均数",
+        "english": "average"
+      },
+      {
+        "chinese": " 小组，分组",
+        "english": "group"
+      },
+      {
+        "chinese": " 管理者",
+        "english": "manager"
+      },
+      {
+        "chinese": "  连接，联结，加入",
+        "english": "join"
+      },
+      {
+        "chinese": " 有区别的",
+        "english": "distinct"
+      },
+      {
+        "chinese": " 解码，译码",
+        "english": "decode"
+      },
+      {
+        "chinese": " 奖金",
+        "english": "bonus"
+      },
+      {
+        "chinese": " 雇员；销售",
+        "english": "salesman"
+      },
+      {
+        "chinese": " 分析师",
+        "english": "analyst"
+      },
+      {
+        "chinese": "  划分，分开 ",
+        "english": "partition"
+      },
+      {
+        "chinese": " 在\u2026上面",
+        "english": "over"
+      },
+      {
+        "chinese": " 阶层，等级",
+        "english": "rank"
+      },
+      {
+        "chinese": " 密集的",
+        "english": "dense"
+      },
+      {
+        "chinese": " 联合",
+        "english": "union"
+      },
+      {
+        "chinese": " 逐级归纳",
+        "english": "rollup"
+      },
+      {
+        "chinese": " 立方体，立方形",
+        "english": "cube"
+      },
+      {
+        "chinese": " 相交，交叉",
+        "english": "Intersect"
+      },
+      {
+        "chinese": " 减号，负号",
+        "english": "Minus"
+      },
+      {
+        "chinese": " 下标，索引",
+        "english": "index"
+      },
+      {
+        "chinese": " 视图",
+        "english": "view"
+      },
+      {
+        "chinese": " 授予",
+        "english": "grant"
+      },
+      {
+        "chinese": " 序列",
+        "english": "sequence"
+      },
+      {
+        "chinese": " 循环",
+        "english": "cycle"
+      },
+      {
+        "chinese": " 缓存",
+        "english": "cache"
+      },
+      {
+        "chinese": " 自动",
+        "english": "auto"
+      },
+      {
+        "chinese": " 增长",
+        "english": "increment"
+      },
+      {
+        "chinese": " 当前，现在",
+        "english": "current"
+      },
+      {
+        "chinese": " 建模",
+        "english": "modeler"
+      },
+      {
+        "chinese": " 语句",
+        "english": "statement"
+      },
+      {
+        "chinese": " 结果集",
+        "english": "resultset"
+      },
+      {
+        "chinese": " 注册",
+        "english": "register"
+      },
+      {
+        "chinese": " 执行",
+        "english": "execute"
+      },
+      {
+        "chinese": " 属性",
+        "english": "property"
+      },
+      {
+        "chinese": " 有多种用途的",
+        "english": "utility"
+      },
+      {
+        "chinese": " 公用的，共用的",
+        "english": "common"
+      },
+      {
+        "chinese": " 池",
+        "english": "pool"
+      },
+      {
+        "chinese": " 空闲的，懒散的",
+        "english": "Idle"
+      },
+      {
+        "chinese": " 最初的，开始的",
+        "english": "initial"
+      },
+      {
+        "chinese": " 准备好的",
+        "english": "Prepared"
+      },
+      {
+        "chinese": " 解释器",
+        "english": "interpreter"
+      },
+      {
+        "chinese": " 注射",
+        "english": "injection"
+      },
+      {
+        "chinese": " 敏感的",
+        "english": "sensitive"
+      },
+      {
+        "chinese": " 迟钝的",
+        "english": "insensitive"
+      },
+      {
+        "chinese": " 向前，前进",
+        "english": "forward"
+      },
+      {
+        "chinese": " 并发",
+        "english": "concurrency"
+      },
+      {
+        "chinese": " 原子性",
+        "english": "atomicity"
+      },
+      {
+        "chinese": " 一致性",
+        "english": "consistency"
+      },
+      {
+        "chinese": " 隔离性",
+        "english": "isolation"
+      },
+      {
+        "chinese": " 持久性",
+        "english": "durability"
+      },
+      {
+        "chinese": " 转移，转帐",
+        "english": "transfer"
+      },
+      {
+        "chinese": " 存钱",
+        "english": "deposite"
+      },
+      {
+        "chinese": " 取钱",
+        "english": "withdraw"
+      },
+      {
+        "chinese": " 余额",
+        "english": "balance"
+      },
+      {
+        "chinese": " 一批",
+        "english": "batch"
+      },
+      {
+        "chinese": " 生成的",
+        "english": "Generated"
+      },
+      {
+        "chinese": " 封装",
+        "english": "encapsulation"
+      }
+    ],
+    "index": 4,
+    "comment": "# Oracle JDBC 阶段常用单词列表"
+  },
+  {
+    "name": "HTML/CSS Java Script",
+    "words": [
+      {
+        "chinese": " 文档",
+        "english": "document"
+      },
+      {
+        "chinese": " 文件",
+        "english": "file"
+      },
+      {
+        "chinese": " 获得",
+        "english": "get"
+      },
+      {
+        "chinese": " 设置",
+        "english": "set"
+      },
+      {
+        "chinese": " 数组",
+        "english": "Array"
+      },
+      {
+        "chinese": " 函数, 功能",
+        "english": "function"
+      },
+      {
+        "chinese": " 数字",
+        "english": "Number"
+      },
+      {
+        "chinese": " 浏览器",
+        "english": "browser"
+      },
+      {
+        "chinese": " 协议",
+        "english": "protocol"
+      },
+      {
+        "chinese": " 表单",
+        "english": "form"
+      },
+      {
+        "chinese": " 按钮",
+        "english": "button"
+      },
+      {
+        "chinese": " 段落",
+        "english": "paragraph"
+      },
+      {
+        "chinese": " 分区，分开",
+        "english": "division"
+      },
+      {
+        "chinese": " 排列，对齐",
+        "english": "align"
+      },
+      {
+        "chinese": " 样式",
+        "english": "style"
+      },
+      {
+        "chinese": " 严格",
+        "english": "strict"
+      },
+      {
+        "chinese": " 过渡的，传统的",
+        "english": "transitional"
+      },
+      {
+        "chinese": " 元",
+        "english": "meta"
+      },
+      {
+        "chinese": " 脚本",
+        "english": "script"
+      },
+      {
+        "chinese": "  缚住或扎牢 ",
+        "english": "span"
+      },
+      {
+        "chinese": " 锚，抛锚",
+        "english": "anchor"
+      },
+      {
+        "chinese": " 一样的，一致的",
+        "english": "uniform"
+      },
+      {
+        "chinese": " 源",
+        "english": "source"
+      },
+      {
+        "chinese": " 超文本",
+        "english": "Hypertext"
+      },
+      {
+        "chinese": " 块",
+        "english": "block"
+      },
+      {
+        "chinese": " 内联",
+        "english": "inline"
+      },
+      {
+        "chinese": " 对象，目标",
+        "english": "target"
+      },
+      {
+        "chinese": " 无序的",
+        "english": "unordered"
+      },
+      {
+        "chinese": " 有序的",
+        "english": "ordered"
+      },
+      {
+        "chinese": " 表格",
+        "english": "sheet"
+      },
+      {
+        "chinese": " 标题",
+        "english": "caption"
+      },
+      {
+        "chinese": " 嵌套，巢",
+        "english": "nest"
+      },
+      {
+        "chinese": " 提交",
+        "english": "submit"
+      },
+      {
+        "chinese": " 放射",
+        "english": "radio"
+      },
+      {
+        "chinese": " 标签",
+        "english": "label"
+      },
+      {
+        "chinese": " 打勾，核对",
+        "english": "check"
+      },
+      {
+        "chinese": " 多个的",
+        "english": "multiple"
+      },
+      {
+        "chinese": " 选项",
+        "english": "option"
+      },
+      {
+        "chinese": " 铭文",
+        "english": "legend"
+      },
+      {
+        "chinese": " 从上到下移动",
+        "english": "scroll"
+      },
+      {
+        "chinese": " 串联",
+        "english": "cascade"
+      },
+      {
+        "chinese": " 背景",
+        "english": "background"
+      },
+      {
+        "chinese": " 链接",
+        "english": "link"
+      },
+      {
+        "chinese": " 操作",
+        "english": "operate"
+      },
+      {
+        "chinese": " 分页",
+        "english": "paging"
+      },
+      {
+        "chinese": " 宽度",
+        "english": "width"
+      },
+      {
+        "chinese": " 高度",
+        "english": "height"
+      },
+      {
+        "chinese": " 字体",
+        "english": "font"
+      },
+      {
+        "chinese": " 盘旋，徘徊",
+        "english": "hover"
+      },
+      {
+        "chinese": " 装饰",
+        "english": "decoration"
+      },
+      {
+        "chinese": " 下划线",
+        "english": "underline"
+      },
+      {
+        "chinese": " 边框",
+        "english": "border"
+      },
+      {
+        "chinese": " 直线",
+        "english": "solid"
+      },
+      {
+        "chinese": " 溢出，挤满",
+        "english": "overflow"
+      },
+      {
+        "chinese": " 隐藏",
+        "english": "hidden"
+      },
+      {
+        "chinese": " 可见",
+        "english": "visible"
+      },
+      {
+        "chinese": " 边缘，范围",
+        "english": "margin"
+      },
+      {
+        "chinese": " 重复",
+        "english": "repeat"
+      },
+      {
+        "chinese": " 导航",
+        "english": "navigation"
+      },
+      {
+        "chinese": " 位置",
+        "english": "position"
+      },
+      {
+        "chinese": " 合并",
+        "english": "collapse"
+      },
+      {
+        "chinese": " 分开",
+        "english": "separate"
+      },
+      {
+        "chinese": " 间隔",
+        "english": "spacing"
+      },
+      {
+        "chinese": " 光标",
+        "english": "cursor"
+      },
+      {
+        "chinese": " 相对",
+        "english": "relative"
+      },
+      {
+        "chinese": " 绝对",
+        "english": "absolute"
+      },
+      {
+        "chinese": " 未定义",
+        "english": "undefined"
+      },
+      {
+        "chinese": " 警告",
+        "english": "alert"
+      },
+      {
+        "chinese": " 确认",
+        "english": "confirm"
+      },
+      {
+        "chinese": " 元素",
+        "english": "element"
+      },
+      {
+        "chinese": " 切下，划分",
+        "english": "slice"
+      },
+      {
+        "chinese": " 评估",
+        "english": "evaluate"
+      },
+      {
+        "chinese": " 焦点",
+        "english": "focus"
+      },
+      {
+        "chinese": " 模糊，失去焦点",
+        "english": "blur"
+      },
+      {
+        "chinese": " 事件",
+        "english": "event"
+      },
+      {
+        "chinese": " 历史",
+        "english": "history"
+      },
+      {
+        "chinese": " 间隔",
+        "english": "interval"
+      },
+      {
+        "chinese": " 轮换",
+        "english": "Rotate"
+      },
+      {
+        "chinese": " 显示",
+        "english": "display"
+      },
+      {
+        "chinese": " 验证",
+        "english": "validate"
+      },
+      {
+        "chinese": " 父级",
+        "english": "parent"
+      },
+      {
+        "chinese": " 兄弟",
+        "english": "sibling"
+      },
+      {
+        "chinese": " 前一个",
+        "english": "previous"
+      },
+      {
+        "chinese": " 内部的",
+        "english": "inner"
+      },
+      {
+        "chinese": " 标签",
+        "english": "tag"
+      },
+      {
+        "chinese": " 追加",
+        "english": "append"
+      },
+      {
+        "chinese": " 原型",
+        "english": "prototype"
+      },
+      {
+        "chinese": " 记号",
+        "english": "notation"
+      },
+      {
+        "chinese": " 拖拽",
+        "english": "drag"
+      },
+      {
+        "chinese": " 志愿者",
+        "english": "volunteer"
+      },
+      {
+        "chinese": " 参赛选手",
+        "english": "racer"
+      }
+    ],
+    "index": 5,
+    "comment": "# HTML/CSS Java Script 阶段的常用单词"
+  },
+  {
+    "name": "Servlet/JSP/Ajax 阶段",
+    "words": [
+      {
+        "chinese": " 超文本传输协议",
+        "english": "http"
+      },
+      {
+        "chinese": " 浏览器",
+        "english": "browser"
+      },
+      {
+        "chinese": " 服务器",
+        "english": "server"
+      },
+      {
+        "chinese": " 服务",
+        "english": "service"
+      },
+      {
+        "chinese": " 状态",
+        "english": "status"
+      },
+      {
+        "chinese": " 小甜饼，点心",
+        "english": "cookie"
+      },
+      {
+        "chinese": " 层",
+        "english": "layer"
+      },
+      {
+        "chinese": " 保持连接性",
+        "english": "keep-alive"
+      },
+      {
+        "chinese": " 用户代理",
+        "english": "user-agent"
+      },
+      {
+        "chinese": " 内容类型",
+        "english": "content-type"
+      },
+      {
+        "chinese": " 字符集",
+        "english": "charset"
+      },
+      {
+        "chinese": " 页面编码",
+        "english": "pageEncoding"
+      },
+      {
+        "chinese": " 向前，发送",
+        "english": "forward"
+      },
+      {
+        "chinese": " 引述，引用",
+        "english": "quote"
+      },
+      {
+        "chinese": " 过滤器",
+        "english": "filter"
+      },
+      {
+        "chinese": " 监听器",
+        "english": "listener"
+      },
+      {
+        "chinese": " 注册",
+        "english": "regist"
+      },
+      {
+        "chinese": " 服务器端小程序 ",
+        "english": "servlet"
+      },
+      {
+        "chinese": " 名字",
+        "english": "name"
+      },
+      {
+        "chinese": " 蜘蛛网, 网络",
+        "english": "web"
+      },
+      {
+        "chinese": " 映射",
+        "english": "mapping"
+      },
+      {
+        "chinese": " 太阳",
+        "english": "sun"
+      },
+      {
+        "chinese": " 超文本标记语言",
+        "english": "html"
+      },
+      {
+        "chinese": " 模式",
+        "english": "pattern"
+      },
+      {
+        "chinese": " 端口",
+        "english": "port"
+      },
+      {
+        "chinese": " 家",
+        "english": "home"
+      },
+      {
+        "chinese": " 启动",
+        "english": "startup"
+      },
+      {
+        "chinese": " 关机",
+        "english": "shutdown"
+      },
+      {
+        "chinese": " 工作",
+        "english": "work"
+      },
+      {
+        "chinese": " 道路",
+        "english": "path"
+      },
+      {
+        "chinese": " 临时",
+        "english": "temp"
+      },
+      {
+        "chinese": " 本地主机",
+        "english": "localhost"
+      },
+      {
+        "chinese": " 继承",
+        "english": "extends"
+      },
+      {
+        "chinese": " 关闭",
+        "english": "close"
+      },
+      {
+        "chinese": " 请求",
+        "english": "request"
+      },
+      {
+        "chinese": " 响应",
+        "english": "response"
+      },
+      {
+        "chinese": " 例子",
+        "english": "example"
+      },
+      {
+        "chinese": " 版本",
+        "english": "version"
+      },
+      {
+        "chinese": " 实例",
+        "english": "instance"
+      },
+      {
+        "chinese": " 地址",
+        "english": "address"
+      },
+      {
+        "chinese": " 网",
+        "english": "net"
+      },
+      {
+        "chinese": " 工程",
+        "english": "project"
+      },
+      {
+        "chinese": " 结束",
+        "english": "finish"
+      },
+      {
+        "chinese": " 系统默认值",
+        "english": "default"
+      },
+      {
+        "chinese": " 位置",
+        "english": "location"
+      },
+      {
+        "chinese": " 来源",
+        "english": "source"
+      },
+      {
+        "chinese": " 系统",
+        "english": "system"
+      },
+      {
+        "chinese": " 文库，库",
+        "english": "library"
+      },
+      {
+        "chinese": " 索引",
+        "english": "index"
+      },
+      {
+        "chinese": " 会话",
+        "english": "session"
+      },
+      {
+        "chinese": " 应用程序",
+        "english": "application"
+      },
+      {
+        "chinese": " 上下文",
+        "english": "context"
+      },
+      {
+        "chinese": " 输出",
+        "english": "out"
+      },
+      {
+        "chinese": " 作者, 书写者",
+        "english": "writer"
+      },
+      {
+        "chinese": " 写",
+        "english": "write"
+      },
+      {
+        "chinese": " 读者",
+        "english": "reader"
+      },
+      {
+        "chinese": " 登入",
+        "english": "login"
+      },
+      {
+        "chinese": " 登出",
+        "english": "logout"
+      },
+      {
+        "chinese": " Servlet上下文",
+        "english": "ServletContext"
+      },
+      {
+        "chinese": " HttpServlet",
+        "english": "HttpServlet"
+      },
+      {
+        "chinese": " Http请求",
+        "english": "HttpServletRequest"
+      },
+      {
+        "chinese": " Http响应",
+        "english": "HttpServletResponse"
+      },
+      {
+        "chinese": " Post请求",
+        "english": "post"
+      },
+      {
+        "chinese": " Get请求",
+        "english": "get"
+      },
+      {
+        "chinese": " Http会话",
+        "english": "HttpSession"
+      },
+      {
+        "chinese": " 统一资源定位",
+        "english": "URL"
+      },
+      {
+        "chinese": " 标准标签库",
+        "english": "JSTL"
+      },
+      {
+        "chinese": " 核心",
+        "english": "core"
+      },
+      {
+        "chinese": " 格式化",
+        "english": "format"
+      },
+      {
+        "chinese": " 异步Json请求",
+        "english": "ajax"
+      },
+      {
+        "chinese": " 查询",
+        "english": "query"
+      },
+      {
+        "chinese": "  表单",
+        "english": "form"
+      }
+    ],
+    "index": 6,
+    "comment": "#涉及到的部分单词"
+  },
+  {
+    "name": "Spring MyBatis 阶段",
+    "words": [
+      {
+        "chinese": " 春天",
+        "english": "Spring"
+      },
+      {
+        "chinese": " MaBatis",
+        "english": "MyBatis"
+      },
+      {
+        "chinese": " 豆荚",
+        "english": "bean"
+      },
+      {
+        "chinese": " 组件",
+        "english": "component"
+      },
+      {
+        "chinese": " 属性",
+        "english": "property"
+      },
+      {
+        "chinese": " 框架",
+        "english": "Framework"
+      },
+      {
+        "chinese": " Java组件",
+        "english": "JavaBean"
+      },
+      {
+        "chinese": " 工厂",
+        "english": "factory"
+      },
+      {
+        "chinese": " 应用,应用程序",
+        "english": "application"
+      },
+      {
+        "chinese": " 上下文, 环境",
+        "english": "context"
+      },
+      {
+        "chinese": " 类路径 ",
+        "english": "ClassPath"
+      },
+      {
+        "chinese": " 别名",
+        "english": "alias"
+      },
+      {
+        "chinese": " 原型",
+        "english": "prototype"
+      },
+      {
+        "chinese": " 单例",
+        "english": "singleton"
+      },
+      {
+        "chinese": " class路径",
+        "english": "classpath"
+      },
+      {
+        "chinese": " 控制反转",
+        "english": "IOC"
+      },
+      {
+        "chinese": " 组件",
+        "english": "Component"
+      },
+      {
+        "chinese": " 仓库",
+        "english": "Repository"
+      },
+      {
+        "chinese": " 注入",
+        "english": "Autowired"
+      },
+      {
+        "chinese": " Spring MVC主控制器",
+        "english": "DispatcherServlet"
+      },
+      {
+        "chinese": " 映射处理器",
+        "english": "HandlerMapping"
+      },
+      {
+        "chinese": " 模型和视图",
+        "english": "ModelAndView"
+      },
+      {
+        "chinese": " 视图解析器",
+        "english": "ViewResolver"
+      },
+      {
+        "chinese": " 解析处理器",
+        "english": "Resolver"
+      },
+      {
+        "chinese": " 内部的",
+        "english": "Internal"
+      },
+      {
+        "chinese": " 资源",
+        "english": "Resource"
+      },
+      {
+        "chinese": " 简单的",
+        "english": "Simple"
+      },
+      {
+        "chinese": " 统一资源定位",
+        "english": "URL"
+      },
+      {
+        "chinese": " 控制句柄",
+        "english": "Handler"
+      },
+      {
+        "chinese": " 字符",
+        "english": "Character"
+      },
+      {
+        "chinese": " 编码",
+        "english": "Encoding"
+      },
+      {
+        "chinese": " 过滤器",
+        "english": "Filter"
+      },
+      {
+        "chinese": " 拦截器",
+        "english": "Interceptor"
+      },
+      {
+        "chinese": " 异常处理器",
+        "english": "ExceptionHandler"
+      },
+      {
+        "chinese": " 异常处理器",
+        "english": "ExceptionResolver"
+      },
+      {
+        "chinese": " 通用的",
+        "english": "Commons"
+      },
+      {
+        "chinese": " 多部分组成的",
+        "english": "Multipart"
+      },
+      {
+        "chinese": " 数据访问异常",
+        "english": "DataAccessException"
+      },
+      {
+        "chinese": " Jdbc模板",
+        "english": "JdbcTemplate"
+      },
+      {
+        "chinese": " dao支持类",
+        "english": "JdbcDaoSupport"
+      },
+      {
+        "chinese": " 请求映射",
+        "english": "RequestMapping"
+      },
+      {
+        "chinese": " 请求参数",
+        "english": "RequestParam"
+      },
+      {
+        "chinese": " 模型Map",
+        "english": "ModelMap"
+      },
+      {
+        "chinese": " 模型属性",
+        "english": "ModelAttribute"
+      },
+      {
+        "chinese": " 属性",
+        "english": "Attribute"
+      },
+      {
+        "chinese": " 反转",
+        "english": "inversion"
+      },
+      {
+        "chinese": " 控制",
+        "english": "control"
+      },
+      {
+        "chinese": " 依赖",
+        "english": "dependency"
+      },
+      {
+        "chinese": " 注入",
+        "english": "injection"
+      },
+      {
+        "chinese": " 面向方面编程",
+        "english": "AOP"
+      },
+      {
+        "chinese": " 方面",
+        "english": "aspect"
+      },
+      {
+        "chinese": " 面向",
+        "english": "oriented"
+      },
+      {
+        "chinese": " 切入点",
+        "english": "pointcut"
+      },
+      {
+        "chinese": " 通知",
+        "english": "advice"
+      },
+      {
+        "chinese": " 自动代理",
+        "english": "autoproxy"
+      },
+      {
+        "chinese": " 数据库会话",
+        "english": "SqlSession"
+      },
+      {
+        "chinese": " 工厂",
+        "english": "Factory"
+      },
+      {
+        "chinese": " 创建器",
+        "english": "Builder"
+      },
+      {
+        "chinese": " sqlsession工厂",
+        "english": "SqlSessionFactory"
+      },
+      {
+        "chinese": " 返回类型",
+        "english": "resultType"
+      },
+      {
+        "chinese": " 返回Map",
+        "english": "resultMap"
+      },
+      {
+        "chinese": " 数据库访问框架",
+        "english": "MyBatis"
+      },
+      {
+        "chinese": " 映射器 ",
+        "english": "Mapper"
+      },
+      {
+        "chinese": " 扫描器",
+        "english": "Scanner"
+      },
+      {
+        "chinese": " 配置器",
+        "english": "Configurer"
+      },
+      {
+        "chinese": " 模板",
+        "english": "Template"
+      },
+      {
+        "chinese": "  关联",
+        "english": "association"
+      },
+      {
+        "chinese": " 区分",
+        "english": "discriminator"
+      },
+      {
+        "chinese": " 状态转移",
+        "english": "restful"
+      },
+      {
+        "chinese": " 响应体",
+        "english": "ResponseBody"
+      },
+      {
+        "chinese": " 执行",
+        "english": "execution"
+      },
+      {
+        "chinese": " 应用程序上下文",
+        "english": "applicationContext"
+      },
+      {
+        "chinese": " 应用程序上下文",
+        "english": "ClassPathXmlApplicationContext"
+      },
+      {
+        "chinese": " 异常处理器",
+        "english": "ExceptionHandler"
+      },
+      {
+        "chinese": " 异常处理器",
+        "english": "HandlerExceptionResolver"
+      }
+    ],
+    "index": 7,
+    "comment": "# Spring 和 MyBatis框架阶段"
+  },
+  {
+    "name": "Struts2 Hibernate 阶段",
+    "words": [
+      {
+        "chinese": " 框架, 架子",
+        "english": "Struts"
+      },
+      {
+        "chinese": " 冬眠",
+        "english": "Hibernate"
+      },
+      {
+        "chinese": " MVC模式",
+        "english": "MVC"
+      },
+      {
+        "chinese": " 模型",
+        "english": "Module"
+      },
+      {
+        "chinese": " 视图",
+        "english": "View"
+      },
+      {
+        "chinese": " 控制器",
+        "english": "Controller"
+      },
+      {
+        "chinese": " 控制",
+        "english": "Control"
+      },
+      {
+        "chinese": " mvc框架",
+        "english": "webwork"
+      },
+      {
+        "chinese": " 基金会名",
+        "english": "Apache"
+      },
+      {
+        "chinese": " Filter控制器",
+        "english": "StrutsPrepareAndExecuteFilter"
+      },
+      {
+        "chinese": " 执行",
+        "english": "Execute"
+      },
+      {
+        "chinese": " 并且",
+        "english": "and"
+      },
+      {
+        "chinese": " 准备",
+        "english": "Prepare"
+      },
+      {
+        "chinese": " 动作",
+        "english": "action"
+      },
+      {
+        "chinese": " 命名空间",
+        "english": "namespace"
+      },
+      {
+        "chinese": " 结果",
+        "english": "result"
+      },
+      {
+        "chinese": " 方法",
+        "english": "method"
+      },
+      {
+        "chinese": " 对象图导航语言",
+        "english": "OGNL"
+      },
+      {
+        "chinese": " 值栈组件",
+        "english": "ValueStack"
+      },
+      {
+        "chinese": " 根",
+        "english": "root"
+      },
+      {
+        "chinese": " 上下文",
+        "english": "context"
+      },
+      {
+        "chinese": " 拦截器",
+        "english": "Interceptor"
+      },
+      {
+        "chinese": " Action上下文",
+        "english": "ActionContext"
+      },
+      {
+        "chinese": " Servlet中Action上下文",
+        "english": "ServletActionContext"
+      },
+      {
+        "chinese": " 会话接口",
+        "english": "SessionAware"
+      },
+      {
+        "chinese": " 重定向Action",
+        "english": "redirectAction"
+      },
+      {
+        "chinese": " 链, 链条",
+        "english": "chain"
+      },
+      {
+        "chinese": " 分发",
+        "english": "dispatcher"
+      },
+      {
+        "chinese": " action名",
+        "english": "actionName"
+      },
+      {
+        "chinese": " 包含的属性",
+        "english": "includeProperties"
+      },
+      {
+        "chinese": " 主题",
+        "english": "theme"
+      },
+      {
+        "chinese": " Action执行者",
+        "english": "ActionInvocation"
+      },
+      {
+        "chinese": " 文件上传",
+        "english": "FileUpload"
+      },
+      {
+        "chinese": " 默认拦截器栈",
+        "english": "defaultStack"
+      },
+      {
+        "chinese": " ORM框架",
+        "english": "Hibernate"
+      },
+      {
+        "chinese": " 对象关系映射",
+        "english": "ORM"
+      },
+      {
+        "chinese": " 配置",
+        "english": "Configuration"
+      },
+      {
+        "chinese": " 会话工厂",
+        "english": "SessionFactory"
+      },
+      {
+        "chinese": " 会话",
+        "english": "Session"
+      },
+      {
+        "chinese": " 事务",
+        "english": "Transaction"
+      },
+      {
+        "chinese": " 查询",
+        "english": "Query"
+      },
+      {
+        "chinese": " 标识列",
+        "english": "identity"
+      },
+      {
+        "chinese": " 序列",
+        "english": "sequence"
+      },
+      {
+        "chinese": " 自然",
+        "english": "native"
+      },
+      {
+        "chinese": " 递增, 增加",
+        "english": "increment"
+      },
+      {
+        "chinese": " 忽略",
+        "english": "assigned"
+      },
+      {
+        "chinese": " 自动",
+        "english": "generator"
+      },
+      {
+        "chinese": " 级联",
+        "english": "cascade"
+      },
+      {
+        "chinese": " 抓取",
+        "english": "fetch"
+      },
+      {
+        "chinese": " 缓存",
+        "english": "ehcache"
+      }
+    ],
+    "index": 8,
+    "comment": "# Struts2 Hibernate 阶段 的单词"
+  },
+  {
+    "name": "大数据",
+    "words": [
+      {
+        "chinese": " http负载均衡软件",
+        "english": "Nginx"
+      },
+      {
+        "chinese": " 负载均衡软件",
+        "english": "LVS"
+      },
+      {
+        "chinese": " lo分发模式",
+        "english": "LVS-DR"
+      },
+      {
+        "chinese": " NAT分发模式",
+        "english": "LVS-NAT"
+      },
+      {
+        "chinese": " 隧道分发模式",
+        "english": "LVS-TUN"
+      },
+      {
+        "chinese": " 轮询算法",
+        "english": "RR"
+      },
+      {
+        "chinese": " 权重轮询算法",
+        "english": "WRR"
+      },
+      {
+        "chinese": " 最小连接算法",
+        "english": "LC"
+      },
+      {
+        "chinese": " 权重最小连接算法",
+        "english": "WCL"
+      },
+      {
+        "chinese": " 地区最少连接算法",
+        "english": "LBLC"
+      },
+      {
+        "chinese": " 复制地区最少连接算法",
+        "english": "LBLCR"
+      },
+      {
+        "chinese": " 目标散列算法",
+        "english": "DH"
+      },
+      {
+        "chinese": " 源散列算法",
+        "english": "SH"
+      },
+      {
+        "chinese": " 最短期望延迟算法",
+        "english": "SED"
+      },
+      {
+        "chinese": " 最少队列算法",
+        "english": "NQ"
+      },
+      {
+        "chinese": " 反向代理缓存",
+        "english": "Squit"
+      },
+      {
+        "chinese": " 反向代理缓存",
+        "english": "Varnish"
+      },
+      {
+        "chinese": " 远程文件系统",
+        "english": "NFS"
+      },
+      {
+        "chinese": " 虚拟文件系统",
+        "english": "VFS"
+      },
+      {
+        "chinese": " 高可用管理器",
+        "english": "PaceMaker"
+      },
+      {
+        "chinese": " 高可用同步",
+        "english": "Corosync"
+      },
+      {
+        "chinese": " 高可用心跳检测",
+        "english": "Heartbeat"
+      },
+      {
+        "chinese": " 高可用心跳检测",
+        "english": "Keepalived"
+      },
+      {
+        "chinese": " 磁盘镜像",
+        "english": "DRBD"
+      },
+      {
+        "chinese": " 磁盘同步",
+        "english": "RSync"
+      },
+      {
+        "chinese": " MYSQL读写分离",
+        "english": "Amoeba"
+      },
+      {
+        "chinese": " 大数据平台",
+        "english": "Hadoop"
+      },
+      {
+        "chinese": " 分布式文件系统",
+        "english": "HDFS"
+      },
+      {
+        "chinese": " 分布式计算",
+        "english": "MapReduce"
+      },
+      {
+        "chinese": " DAG计算框架",
+        "english": "Tez"
+      },
+      {
+        "chinese": " 有向无环图",
+        "english": "DAG"
+      },
+      {
+        "chinese": " MapReduce流程",
+        "english": "Oozie"
+      },
+      {
+        "chinese": " 列数据库",
+        "english": "Hbase"
+      },
+      {
+        "chinese": " 列数据库",
+        "english": "Cassandra"
+      },
+      {
+        "chinese": " 文档数据库",
+        "english": "Mongodb"
+      },
+      {
+        "chinese": " 文档数据库",
+        "english": "CouchDB"
+      },
+      {
+        "chinese": " kv数据库",
+        "english": "LevelDB"
+      },
+      {
+        "chinese": " kv数据库",
+        "english": "Redis"
+      },
+      {
+        "chinese": " kv数据库",
+        "english": "Memcached"
+      },
+      {
+        "chinese": " hadoop数据仓库",
+        "english": "Hive"
+      },
+      {
+        "chinese": " 类SQL框架",
+        "english": "Pig"
+      },
+      {
+        "chinese": " SPARKSQL框架",
+        "english": "SparkSQL"
+      },
+      {
+        "chinese": " 大数据SQL",
+        "english": "Drill"
+      },
+      {
+        "chinese": " 大数据SQL",
+        "english": "Crunch"
+      },
+      {
+        "chinese": " HbaseSQL框架",
+        "english": "Phoenix"
+      },
+      {
+        "chinese": " 数据仓库",
+        "english": "Greenplum"
+      },
+      {
+        "chinese": " 数据挖掘库",
+        "english": "Mahout"
+      },
+      {
+        "chinese": " 数据挖掘库",
+        "english": "Mlib"
+      },
+      {
+        "chinese": " 并行计算",
+        "english": "Hama"
+      },
+      {
+        "chinese": " 图计算",
+        "english": "GraphX"
+      },
+      {
+        "chinese": " 图计算",
+        "english": "Giraph"
+      },
+      {
+        "chinese": " 图计算",
+        "english": "Neo4j"
+      },
+      {
+        "chinese": " 分布式管理",
+        "english": "Zookeeper"
+      },
+      {
+        "chinese": " 日志收集",
+        "english": "Flume"
+      },
+      {
+        "chinese": " 日志收集",
+        "english": "Scribe"
+      },
+      {
+        "chinese": " 日志收集监控",
+        "english": "Chukwa"
+      },
+      {
+        "chinese": " 抽取转换加载",
+        "english": "ETL"
+      },
+      {
+        "chinese": " ETL工具",
+        "english": "Sqoop"
+      },
+      {
+        "chinese": " ETL工具",
+        "english": "Kettle"
+      },
+      {
+        "chinese": " 消息队列",
+        "english": "Kafka"
+      },
+      {
+        "chinese": " 消息队列",
+        "english": "Samza"
+      },
+      {
+        "chinese": " 消息队列",
+        "english": "RabbitMQ"
+      },
+      {
+        "chinese": " 消息队列协议",
+        "english": "AMQP"
+      },
+      {
+        "chinese": " 消息队列协议",
+        "english": "MQTT"
+      },
+      {
+        "chinese": " 流计算",
+        "english": "Storm"
+      },
+      {
+        "chinese": " 内存计算",
+        "english": "Spark"
+      },
+      {
+        "chinese": " 流计算",
+        "english": "S4"
+      },
+      {
+        "chinese": " 分布式爬虫",
+        "english": "Nutch"
+      },
+      {
+        "chinese": " 索引搜索库",
+        "english": "Lucene"
+      },
+      {
+        "chinese": " 分布式搜索框架",
+        "english": "Solr"
+      },
+      {
+        "chinese": " 分布式调度平台",
+        "english": "Yarn"
+      },
+      {
+        "chinese": " 分布式调度平台",
+        "english": "Mesos"
+      },
+      {
+        "chinese": " RPC及序列化",
+        "english": "Thrift"
+      },
+      {
+        "chinese": " RPC及序列化",
+        "english": "ProtocolBuffer"
+      },
+      {
+        "chinese": " RPC及序列化",
+        "english": "Avro"
+      },
+      {
+        "chinese": " RPC及序列化",
+        "english": "Marshaling"
+      },
+      {
+        "chinese": " Hadoop管理平台",
+        "english": "Ambari"
+      },
+      {
+        "chinese": " 运维管理平台",
+        "english": "Zabbix"
+      },
+      {
+        "chinese": " 运维管理平台",
+        "english": "Nagios"
+      },
+      {
+        "chinese": " 运维管理平台",
+        "english": "Ganglia"
+      },
+      {
+        "chinese": " 分布式文件系统",
+        "english": "FastDFS"
+      },
+      {
+        "chinese": " 分布式文件系统",
+        "english": "MooseFS"
+      },
+      {
+        "chinese": " 分布式文件系统",
+        "english": "Riak"
+      },
+      {
+        "chinese": " 分布式文件系统",
+        "english": "Gluster"
+      },
+      {
+        "chinese": " 高可用文件系统",
+        "english": "Bookkeeper"
+      },
+      {
+        "chinese": " HANA 内存数据库",
+        "english": "SAP"
+      },
+      {
+        "chinese": " 数据分析工具",
+        "english": "Splunk"
+      },
+      {
+        "chinese": " ETL工具",
+        "english": "Informatica"
+      },
+      {
+        "chinese": " 分类决策树算法",
+        "english": "C4.5"
+      },
+      {
+        "chinese": " 聚类算法",
+        "english": "K-Means"
+      },
+      {
+        "chinese": " 频繁项集算法",
+        "english": "Apriori"
+      },
+      {
+        "chinese": " 聚类算法",
+        "english": "EM"
+      },
+      {
+        "chinese": " 网站价值评估",
+        "english": "PageRank"
+      },
+      {
+        "chinese": " 分类模型",
+        "english": "AdaBoost"
+      },
+      {
+        "chinese": " 分类算法",
+        "english": "KNN"
+      },
+      {
+        "chinese": " 朴素贝叶斯",
+        "english": "NBC"
+      },
+      {
+        "chinese": " 回归树",
+        "english": "CART"
+      },
+      {
+        "chinese": " 神经网络",
+        "english": "ANNs"
+      },
+      {
+        "chinese": " 随机森林",
+        "english": "RandomFerns"
+      }
+    ],
+    "index": 9,
+    "comment": "# 大数据方向常用词汇"
+  }
+]

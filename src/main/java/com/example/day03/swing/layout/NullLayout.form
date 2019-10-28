@@ -19,6 +19,12 @@
           <text value="Label"/>
         </properties>
       </component>
+      <component id="dd41" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+        <constraints/>
+        <properties>
+          <model/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>
