@@ -4,17 +4,30 @@ import com.sun.org.apache.xpath.internal.operations.String;
 
 import java.io.File;
 
+/**
+ * @author pengda
+ */
 public class First {
-    public static void main(String[] args) {
-        // 日你
+	private First() {
+	}
 
-        File file = new File("/text.txt");
-        /**
-         * Hello
-         */
-        {
-            System.out.println("hello");
-        }
+	public static void main(String[] args) {
+		// 日你
+
+		File file = new File("/text.txt");
+
+		{
+			System.out.println("wocao");
+		}
 //        System.out.println("草");
-    }
+	}
+
+	class Apple {
+
+	}
+
+	class RedApple extends Apple {
+
+	}
+
 }

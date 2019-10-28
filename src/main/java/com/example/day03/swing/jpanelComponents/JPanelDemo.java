@@ -31,7 +31,9 @@ public class JPanelDemo {
         jPanel3.add(new JButton("登陆"));
 //        add 返回param的应用
         JButton register = (JButton) jPanel3.add(new JButton("注册"));
+
         register.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("注册呗");
             }
