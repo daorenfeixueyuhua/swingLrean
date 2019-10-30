@@ -2,6 +2,9 @@ package com.example.v01;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
@@ -33,14 +36,16 @@ public class Four extends JFrame {
 	private static final String BG_IMG = "/img/bg.png";
 	private static final String LOGO_IMG = "/img/logo.png";
 	private static final String TITLE = "打字游戏";
+
+	// TODO: 2019/10/30 单词移动速度和刷新频率要更改 
 	/**
 	 * 添加单词速度
 	 */
-	private static final int ADD_WORD_SPEED = 1000;
+	private static final int ADD_WORD_SPEED = 2000;
 	/**
 	 * 单词移动速度 次/毫秒
 	 */
-	private static final int MOVE_WORD_SPEED = 200;
+	private static final int MOVE_WORD_SPEED = 1000;
 	/**
 	 * 单词移动距离
 	 */
@@ -49,6 +54,12 @@ public class Four extends JFrame {
 	 * 等待加载速度
 	 */
 	private static final int LOEAD_SHOW_WATI = 1000;
+	/**
+	 * 游戏刷新频率
+	 */
+	private static final int SHOW_FULSH = 100;
+	private static final int FONT_SIZE = 24;
+
 	/**
 	 * 所有课程
 	 */
@@ -83,6 +94,18 @@ public class Four extends JFrame {
 	 */
 	private Image image;
 
+	private BufferedImage iBuffer = null;
+	private Graphics2D graphics = null;
+
+	/**
+	 * 当前输入
+	 */
+	private StringBuffer showString;
+	/**
+	 * 匹配到的字符下
+	 */
+	private int index = -1;
+
 	public static void main(String[] args) {
 		Four four = new Four();
 		four.start();
@@ -104,8 +127,66 @@ public class Four extends JFrame {
 	private void gameStart() {
 		loadWordBg();
 		addWord();
+		showFlush();
 		wordShow();
+		keyListener();
+	}
 
+	/**
+	 * 键盘监听
+	 */
+	private void keyListener() {
+		this.addKeyListener(new KeyListener() {
+			@Override
+			public void keyTyped(KeyEvent e) {
+				char keyChar = e.getKeyChar();
+				System.out.println(keyChar);
+				if (keyChar == KeyEvent.VK_ESCAPE) {
+					System.out.println("游戏暂停");
+				}
+				if (keyChar == KeyEvent.VK_BACK_SPACE) {
+					if (showString != null && !"".equals(showString.toString())) {
+						System.out.println("删除字符");
+						showString.delete(showString.length() - 1, showString.length());
+					}
+				} else {
+					showString.append(keyChar);
+					wordMate();
+				}
+				repaint();
+			}
+
+			@Override
+			public void keyPressed(KeyEvent e) {
+			}
+
+			@Override
+			public void keyReleased(KeyEvent e) {
+			}
+		});
+	}
+
+	/**
+	 * 单词匹配算法
+	 */
+	private void wordMate() {
+		for (int i = 0; i < showWord.size(); i++) {
+			String word = showWord.get(i).getEnglish();
+			int indexOf = word.indexOf(showString.toString());
+			if (!"".equals(showString.toString()) && indexOf == 0) {
+				System.out.println(indexOf + " " + showString + " " + word);
+				index = i;
+				repaint();
+				if (word.equals(showString.toString())) {
+					System.out.println("匹配成功");
+					showWord.remove(i);
+					i--;
+					index = -1;
+					// 清空单词
+					showString.delete(0, showString.length());
+				}
+			}
+		}
 	}
 
 	/**
@@ -121,6 +202,19 @@ public class Four extends JFrame {
 				collisionDetection();
 			}
 		}, LOEAD_SHOW_WATI, MOVE_WORD_SPEED);
+	}
+
+	/**
+	 * 游戏刷新
+	 */
+	private void showFlush() {
+		Timer timer = new Timer();
+		timer.schedule(new TimerTask() {
+			@Override
+			public void run() {
+				repaint();
+			}
+		}, LOEAD_SHOW_WATI, SHOW_FULSH);
 	}
 
 	/**
@@ -162,8 +256,12 @@ public class Four extends JFrame {
 	 * 单词移动
 	 */
 	private void spiritMove() {
-		for (Word1 w : showWord) {
-			w.setY(w.getY() + MOVE_WORD_LENGTH);
+//		for (Word1 w : showWord) {
+//
+//		}
+		// TODO: 2019/10/30  使用增强循环出现 java.util.ConcurrentModificationException
+		for (int i = 0; i < showWord.size(); i++) {
+			showWord.get(i).setY(showWord.get(i).getY() + MOVE_WORD_LENGTH);
 		}
 	}
 
@@ -182,7 +280,7 @@ public class Four extends JFrame {
 //		this.worldPanel.repaint();
 //		this.bgPanel.repaint();
 //		this.modePanel.repaint();
-		this.repaint();
+//		this.repaint();
 	}
 
 	/**
@@ -200,6 +298,7 @@ public class Four extends JFrame {
 		currentCourse1 = course1List.get(dataMode);
 		allWord = currentCourse1.getWords();
 		showWord = new ArrayList<Word1>();
+		showString = new StringBuffer();
 	}
 
 	/**
@@ -264,22 +363,45 @@ public class Four extends JFrame {
 	 * @param g
 	 */
 	public void paintWord(Graphics g) {
-		g.drawImage(image, 0, 0, Four.WIDTH, Four.HEIGHT, this);
+		// TODO: 2019/10/30 解决游戏闪烁问题 
+		if (iBuffer == null) {
+			iBuffer = (BufferedImage) createImage(this.getSize().width, this.getSize().height);
+			// getGraphics() not valid for images created with createImage(producer)
+			// http://www.blogjava.net/sunfruit/archive/2006/03/11/34818.html
+			graphics = (Graphics2D) iBuffer.getGraphics();
+		}
+		g.drawImage(this.image, 0, 0, Four.WIDTH, Four.HEIGHT, this);
 		g.setColor(Color.RED);
-		g.setFont(Font.getFont("楷体"));
+		Font font = new Font("黑体", Font.ITALIC, FONT_SIZE);
+		g.setFont(font);
 		if (count != 0) {
 //			System.out.println(showWord);
-			for (Word1 w : showWord) {
-				g.drawString(w.getChinese(), w.getX(), w.getY());
-				g.drawString(w.getEnglish(), w.getX(), w.getY() + 10);
-			}
-			g.drawString("LOVE", 100, 100);
-		}
+			for (int i = 0; i < showWord.size(); i++) {
+				Word1 w = showWord.get(i);
+				g.setColor(Color.RED);
+				if (i == index) {
+					System.out.println("匹配到的字符: " + index + " " + w.getEnglish());
+					g.drawString(w.getChinese(), w.getX(), w.getY());
+					g.drawString(w.getEnglish(), w.getX(), w.getY() + FONT_SIZE);
 
+					g.setColor(Color.BLACK);
+					g.drawString(showString.toString(), w.getX(), w.getY() + FONT_SIZE);
+				} else {
+					g.drawString(w.getChinese(), w.getX(), w.getY());
+					g.drawString(w.getEnglish(), w.getX(), w.getY() + FONT_SIZE);
+				}
+
+			}
+//			g.drawString("LOVE", 100, 100);
+		}
+		if (showString != null && !"".equals(showString)) {
+			g.drawString(showString.toString(), Four.WIDTH / 2, Four.HEIGHT - 20);
+		}
 	}
 
 	@Override
 	public void paint(Graphics g) {
+
 		paintWord(g);
 		count++;
 	}
