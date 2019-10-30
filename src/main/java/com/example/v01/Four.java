@@ -45,11 +45,11 @@ public class Four extends JFrame {
 	/**
 	 * 单词移动速度 次/毫秒
 	 */
-	private static final int MOVE_WORD_SPEED = 1000;
+	private static final int MOVE_WORD_SPEED = 500;
 	/**
 	 * 单词移动距离
 	 */
-	private static final int MOVE_WORD_LENGTH = 10;
+	private static final int MOVE_WORD_LENGTH = 1;
 	/**
 	 * 等待加载速度
 	 */
@@ -77,6 +77,10 @@ public class Four extends JFrame {
 	 */
 	private static List<Word1> showWord;
 	private static int count = 0;
+	/**
+	 * 刷新次数
+	 */
+	private static int flush = 0;
 	/**
 	 * 背景
 	 */
@@ -126,8 +130,8 @@ public class Four extends JFrame {
 	 */
 	private void gameStart() {
 		loadWordBg();
-		addWord();
-		showFlush();
+//		addWord();
+//		showFlush();
 		wordShow();
 		keyListener();
 	}
@@ -198,8 +202,11 @@ public class Four extends JFrame {
 			@Override
 			public void run() {
 				gameAction();
+				loadWordBg();
+				repaint();
 				spiritMove();
 				collisionDetection();
+				flush++;
 			}
 		}, LOEAD_SHOW_WATI, MOVE_WORD_SPEED);
 	}
@@ -212,7 +219,7 @@ public class Four extends JFrame {
 		timer.schedule(new TimerTask() {
 			@Override
 			public void run() {
-				repaint();
+//				repaint();
 			}
 		}, LOEAD_SHOW_WATI, SHOW_FULSH);
 	}
@@ -237,7 +244,7 @@ public class Four extends JFrame {
 		timer.schedule(new TimerTask() {
 			@Override
 			public void run() {
-				loadWordBg();
+//				loadWordBg();
 			}
 		}, LOEAD_SHOW_WATI, ADD_WORD_SPEED);
 	}
@@ -247,7 +254,8 @@ public class Four extends JFrame {
 	 * 加载游戏精灵
 	 */
 	private void loadWordBg() {
-		if (allWord.size() != 0) {
+		// TODO: 2019/10/30 此处需要更改
+		if (flush % 10 == 0 && allWord.size() != 0) {
 			showWord.add(allWord.remove(0));
 		}
 	}
@@ -263,12 +271,14 @@ public class Four extends JFrame {
 		for (int i = 0; i < showWord.size(); i++) {
 			showWord.get(i).setY(showWord.get(i).getY() + MOVE_WORD_LENGTH);
 		}
+
 	}
 
 	/**
 	 * 游戏事件
 	 */
 	private void gameAction() {
+
 		showRunWord();
 	}
 

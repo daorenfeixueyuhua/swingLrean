@@ -23,7 +23,7 @@ public class Word1 extends JLabel {
 		int length = Math.max(this.english.length(), this.chinese.length());
 		Random random = new Random();
 		this.x = random.nextInt(Four.WIDTH - length);
-		this.y = 100;
+		this.y = 0;
 		this.setLocation(this.x, this.y);
 	}
 }
