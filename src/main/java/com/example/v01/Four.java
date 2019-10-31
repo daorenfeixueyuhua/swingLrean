@@ -39,13 +39,13 @@ public class Four extends JFrame {
 
 	// TODO: 2019/10/30 单词移动速度和刷新频率要更改 
 	/**
+	 * 显示字体大小
+	 */
+	public static final int FONT_SIZE = 24;
+	/**
 	 * 添加单词速度
 	 */
-	private static final int ADD_WORD_SPEED = 2000;
-	/**
-	 * 单词移动速度 次/毫秒
-	 */
-	private static final int MOVE_WORD_SPEED = 500;
+	private static final int ADD_WORD_SPEED = 5000;
 	/**
 	 * 单词移动距离
 	 */
@@ -55,15 +55,27 @@ public class Four extends JFrame {
 	 */
 	private static final int LOEAD_SHOW_WATI = 1000;
 	/**
+	 * 单词移动速度 次/毫秒
+	 */
+	private static final int MOVE_WORD_SPEED = 100;
+	/**
 	 * 游戏刷新频率
 	 */
-	private static final int SHOW_FULSH = 100;
-	private static final int FONT_SIZE = 24;
+	private static final int SHOW_FULSH = 500;
 
 	/**
 	 * 所有课程
 	 */
 	private static List<Course1> course1List;
+	/**
+	 * 最大允许丢失
+	 */
+	private static final int MAX_LOSE = 10;
+	private static boolean isPause;
+	/**
+	 * 分数
+	 */
+	private static Score score;
 	/**
 	 * 当前选中课程
 	 */
@@ -76,6 +88,10 @@ public class Four extends JFrame {
 	 * 当前显示单词
 	 */
 	private static List<Word1> showWord;
+	/**
+	 * 子弹JPanel
+	 */
+	private Bullet bullet;
 	private static int count = 0;
 	/**
 	 * 刷新次数
@@ -109,6 +125,14 @@ public class Four extends JFrame {
 	 * 匹配到的字符下
 	 */
 	private int index = -1;
+	/**
+	 * 暂停JPanel
+	 */
+	private Pause pause;
+	/**
+	 * 丢失单词
+	 */
+	private int loseWord = 0;
 
 	public static void main(String[] args) {
 		Four four = new Four();
@@ -122,7 +146,6 @@ public class Four extends JFrame {
 		init();
 		gameDataLoad();
 		gameStart();
-		gameOver();
 	}
 
 	/**
@@ -130,10 +153,42 @@ public class Four extends JFrame {
 	 */
 	private void gameStart() {
 		loadWordBg();
-//		addWord();
-//		showFlush();
+		addWord();
+		showBullet();
+		showFlush();
 		wordShow();
 		keyListener();
+	}
+
+	/**
+	 * 显示子弹
+	 */
+	private void showBullet() {
+
+		Timer timer = new Timer();
+		timer.schedule(new TimerTask() {
+			@Override
+			public void run() {
+				if (!isPause) {
+					bullet.step();
+					if (index == -1) {
+					} else {
+						try {
+							bullet.collide(showWord.get(index));
+						} catch (RuntimeException e) {
+							// TODO: 2019/10/31 消亡
+							// 清空单词
+							System.out.println("word dispaly");
+							showWord.remove(index);
+							index = -1;
+							score.addScore();
+						}
+
+					}
+				}
+
+			}
+		}, LOEAD_SHOW_WATI, MOVE_WORD_SPEED);
 	}
 
 	/**
@@ -144,19 +199,26 @@ public class Four extends JFrame {
 			@Override
 			public void keyTyped(KeyEvent e) {
 				char keyChar = e.getKeyChar();
-				System.out.println(keyChar);
+//				System.out.println(keyChar);
 				if (keyChar == KeyEvent.VK_ESCAPE) {
-					System.out.println("游戏暂停");
-				}
-				if (keyChar == KeyEvent.VK_BACK_SPACE) {
+
+					gameOver();
+				} else if (keyChar == KeyEvent.VK_BACK_SPACE) {
 					if (showString != null && !"".equals(showString.toString())) {
 						System.out.println("删除字符");
 						showString.delete(showString.length() - 1, showString.length());
 					}
+				} else if (keyChar == KeyEvent.VK_F1) {
+					System.out.println("游戏暂停");
+					isPause = true;
+				} else if (isPause && keyChar == KeyEvent.VK_C) {
+					System.out.println("游戏继续");
+					isPause = false;
 				} else {
 					showString.append(keyChar);
 					wordMate();
 				}
+
 				repaint();
 			}
 
@@ -178,16 +240,30 @@ public class Four extends JFrame {
 			String word = showWord.get(i).getEnglish();
 			int indexOf = word.indexOf(showString.toString());
 			if (!"".equals(showString.toString()) && indexOf == 0) {
-				System.out.println(indexOf + " " + showString + " " + word);
+//				System.out.println(indexOf + " " + showString + " " + word);
 				index = i;
 				repaint();
 				if (word.equals(showString.toString())) {
 					System.out.println("匹配成功");
-					showWord.remove(i);
-					i--;
-					index = -1;
-					// 清空单词
+					bullet.setX(showWord.get(i));
+//					try {
+//						Thread.sleep(500);
+//					} catch (InterruptedException e) {
+//						e.printStackTrace();
+//					}
+//					showWord.remove(i);
+//					bullet.setShow(false);
+//					bullet.destory();
+//					bullet.collide(showWord.get(i));
 					showString.delete(0, showString.length());
+//					if (Bullet.iscollute) {
+//						// 清空单词
+//						System.out.println("word dispaly");
+//						showWord.remove(i);
+//						i--;
+//						index = -1;
+//					}
+					i--;
 				}
 			}
 		}
@@ -197,16 +273,19 @@ public class Four extends JFrame {
 	 * 显示单词
 	 */
 	private void wordShow() {
+
 		Timer timer = new Timer();
 		timer.schedule(new TimerTask() {
 			@Override
 			public void run() {
-				gameAction();
-				loadWordBg();
-				repaint();
-				spiritMove();
-				collisionDetection();
-				flush++;
+				if (!isPause) {
+					gameAction();
+					repaint();
+					spiritMove();
+					collisionDetection();
+					flush++;
+				}
+
 			}
 		}, LOEAD_SHOW_WATI, MOVE_WORD_SPEED);
 	}
@@ -219,7 +298,7 @@ public class Four extends JFrame {
 		timer.schedule(new TimerTask() {
 			@Override
 			public void run() {
-//				repaint();
+				repaint();
 			}
 		}, LOEAD_SHOW_WATI, SHOW_FULSH);
 	}
@@ -228,9 +307,17 @@ public class Four extends JFrame {
 	 * 碰撞检测
 	 */
 	private void collisionDetection() {
+		// 判断游戏是否自动结束
+		if (showWord.size() == 0 && loseWord < MAX_LOSE) {
+			gameOver();
+
+		}
+		// 单词丢失检测
 		for (int i = 0; i < showWord.size(); i++) {
 			if (showWord.get(i).getY() >= Four.HEIGHT) {
+				loseWord++;
 				showWord.remove(i);
+				i--;
 			}
 		}
 
@@ -244,9 +331,12 @@ public class Four extends JFrame {
 		timer.schedule(new TimerTask() {
 			@Override
 			public void run() {
-//				loadWordBg();
+				if (!isPause) {
+					loadWordBg();
+				}
 			}
 		}, LOEAD_SHOW_WATI, ADD_WORD_SPEED);
+
 	}
 
 	/**
@@ -255,7 +345,7 @@ public class Four extends JFrame {
 	 */
 	private void loadWordBg() {
 		// TODO: 2019/10/30 此处需要更改
-		if (flush % 10 == 0 && allWord.size() != 0) {
+		if (allWord.size() != 0) {
 			showWord.add(allWord.remove(0));
 		}
 	}
@@ -264,14 +354,12 @@ public class Four extends JFrame {
 	 * 单词移动
 	 */
 	private void spiritMove() {
-//		for (Word1 w : showWord) {
-//
-//		}
 		// TODO: 2019/10/30  使用增强循环出现 java.util.ConcurrentModificationException
 		for (int i = 0; i < showWord.size(); i++) {
 			showWord.get(i).setY(showWord.get(i).getY() + MOVE_WORD_LENGTH);
 		}
-
+		// 子弹移动
+		bullet.step();
 	}
 
 	/**
@@ -279,7 +367,7 @@ public class Four extends JFrame {
 	 */
 	private void gameAction() {
 
-		showRunWord();
+//		showRunWord();
 	}
 
 	/**
@@ -297,7 +385,9 @@ public class Four extends JFrame {
 	 * 游戏结束
 	 */
 	private void gameOver() {
-
+		System.out.println("游戏结束");
+//		isPause = true;
+		System.exit(0);
 	}
 
 	/**
@@ -309,6 +399,10 @@ public class Four extends JFrame {
 		allWord = currentCourse1.getWords();
 		showWord = new ArrayList<Word1>();
 		showString = new StringBuffer();
+		bullet = new Bullet();
+		pause = new Pause();
+		isPause = false;
+		score = new Score(0);
 	}
 
 	/**
@@ -390,7 +484,7 @@ public class Four extends JFrame {
 				Word1 w = showWord.get(i);
 				g.setColor(Color.RED);
 				if (i == index) {
-					System.out.println("匹配到的字符: " + index + " " + w.getEnglish());
+//					System.out.println("匹配到的字符: " + index + " " + w.getEnglish());
 					g.drawString(w.getChinese(), w.getX(), w.getY());
 					g.drawString(w.getEnglish(), w.getX(), w.getY() + FONT_SIZE);
 
@@ -407,11 +501,21 @@ public class Four extends JFrame {
 		if (showString != null && !"".equals(showString)) {
 			g.drawString(showString.toString(), Four.WIDTH / 2, Four.HEIGHT - 20);
 		}
+		if (bullet != null && bullet.isShow()) {
+			g.drawImage(bullet.getImage(), bullet.getX(), bullet.getY(), Bullet.WIDTH, Bullet.HEIGHT, this);
+		}
+		if (score != null) {
+			g.setFont(Score.FONT);
+			g.setColor(Color.black);
+			g.drawString(String.valueOf(score.getScore()), Score.X, Score.Y);
+		}
+		if (isPause) {
+			g.drawImage(pause.getImage(), pause.getX(), pause.getY(), Pause.WIDTH, Pause.HEIGHT, this);
+		}
 	}
 
 	@Override
 	public void paint(Graphics g) {
-
 		paintWord(g);
 		count++;
 	}

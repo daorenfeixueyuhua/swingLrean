@@ -2,7 +2,6 @@ package com.example.v01;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.json.JSONArray;
 
 import java.io.*;
 import java.net.URISyntaxException;
@@ -39,12 +38,12 @@ public class LoadFileTool {
 		}
 	}
 
-	public static void main(String[] args) {
-		LoadFileTool loadFileTool = new LoadFileTool("/dic");
-		List<Course1> course1List = loadFileTool.listCourse();
-		JSONArray jsonArray = new JSONArray(course1List);
-		System.out.println(jsonArray.toString());
-	}
+//	public static void main(String[] args) {
+////		LoadFileTool loadFileTool = new LoadFileTool("/dic");
+////		List<Course1> course1List = loadFileTool.listCourse();
+////		JSONArray jsonArray = new JSONArray(course1List);
+////		System.out.println(jsonArray.toString());
+////	}
 
 	public List<Course1> listCourse() {
 		List<Course1> course1List = new ArrayList<Course1>();
